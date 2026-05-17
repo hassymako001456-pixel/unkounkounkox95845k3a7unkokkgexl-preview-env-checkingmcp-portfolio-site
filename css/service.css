@@ -1,0 +1,29 @@
+/* service.css - migrated from inline CSS. Keep visual parity first. */
+
+.values{background:linear-gradient(#fff,#f4f9fd)}
+.value-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.value-item{text-align:center;padding:12px 38px;border-right:1px solid #d6e0ea}
+.value-item:last-child{border-right:0}
+.icon{width:52px;height:52px;margin:0 auto 14px;display:grid;place-items:center;color:var(--navy);font-size:34px}
+.value-item h3{margin:0 0 8px;color:var(--navy);font-size:15px}
+.value-item p{font-size:13px;margin:0;line-height:1.9}
+.service-cards{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.service-card{border:1px solid #d8e2ec;border-radius:7px;background:linear-gradient(135deg,#f8fbff,#fff);padding:26px}
+.service-card.green{background:linear-gradient(135deg,#f8fcf8,#fff)}
+.service-head{display:grid;grid-template-columns:auto 1fr 185px;gap:20px;align-items:start}
+.num{width:54px;height:54px;background:var(--navy);color:#fff;border-radius:5px;display:grid;place-items:center;font-family:var(--serif);font-size:22px;font-weight:800}
+.green .num{background:#2d763a}
+.service-card h3{margin:0 0 12px;color:var(--navy);font-family:var(--serif);font-size:24px}
+.green h3{color:#2d763a}
+.service-head img{height:160px;width:100%;object-fit:cover;border-radius:5px}
+.feature-icons{display:grid;grid-template-columns:repeat(5,1fr);gap:0;background:#fff;border-radius:6px;margin-top:22px;border:1px solid #e1e9f1}
+.feature-icons div{text-align:center;padding:18px 10px;border-right:1px solid #dbe5ef;font-size:12px;font-weight:800}
+.feature-icons div:last-child{border-right:0}
+.field-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:22px}
+.field-card img{height:118px;width:100%;object-fit:cover;border-radius:4px}
+.field-card h3{color:var(--navy);font-size:16px;margin:12px 0 4px}
+.field-card p{font-size:13px;margin:0}
+
+@media(max-width:1000px){
+.service-head img{height:220px}
+}

@@ -1,0 +1,15 @@
+/* works.css - migrated from inline CSS. Keep visual parity first. */
+
+.stats{background:#f6f9fd;border-radius:6px;display:grid;grid-template-columns:repeat(5,1fr);gap:0;padding:26px}
+.stat{text-align:center;border-right:1px solid #d8e2ec}
+.stat:last-child{border-right:0}
+.stat strong{display:block;color:var(--navy);font-family:var(--serif);font-size:34px;line-height:1.2}
+.stat span{font-size:13px;font-weight:800}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.project{border:1px solid #d8e2ec;border-radius:5px;overflow:hidden;background:#fff}
+.project img{height:136px;width:100%;object-fit:cover}
+.project div{padding:14px}
+.project h3{font-size:15px;color:var(--navy);margin:0 0 8px}
+.project p{font-size:12px;margin:0}
+.logo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.fake-logo{font-weight:800;color:#1b466f;padding:10px 8px}

@@ -1,0 +1,23 @@
+/* sustainability.css - migrated from inline CSS. Keep visual parity first. */
+
+.sustain-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.esg-card{background:#f8fbfe;border:1px solid #e1eaf2;border-radius:7px;padding:20px}
+.esg-head{display:flex;align-items:center;gap:12px;margin-bottom:14px;font-family:var(--serif);font-size:19px;font-weight:800;color:var(--navy)}
+.esg-letter{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#2f833f;color:#fff;font-size:24px}
+.social .esg-letter{background:#0872bb}
+.gov .esg-letter{background:#4b418e}
+.esg-card img{height:98px;width:100%;object-fit:cover;border-radius:4px;margin-bottom:14px}
+.check{padding:0;margin:0;display:grid;gap:10px;list-style:none}
+.check li{font-size:14px;font-weight:700;display:flex;gap:10px}
+.check li:before{content:"✓";width:18px;height:18px;border:2px solid currentColor;border-radius:50%;display:grid;place-items:center;font-size:11px;line-height:1;color:var(--blue);flex:0 0 auto;margin-top:5px}
+.esg-card:first-child .check li:before{color:#2d763a}
+.sdgs{background:#f8fbfe;border-radius:6px;padding:20px}
+.sdg-row{display:grid;grid-template-columns:repeat(8,1fr);gap:22px;margin-top:14px}
+.action-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.action img{height:110px;width:100%;object-fit:cover;border-radius:4px}
+.action h3{margin:12px 0 4px;color:var(--navy);font-size:16px}
+.action p{font-size:13px;margin:0}
+
+@media(max-width:680px){
+.sdg-row{grid-template-columns:repeat(4,1fr)}
+}

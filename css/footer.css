@@ -1,0 +1,134 @@
+/* footer.css - migrated from inline CSS. Keep visual parity first. */
+
+.footer-main{padding:34px 0 14px;border-top:1px solid var(--line);background:#fff}
+body .footer-grid{max-width:var(--max);margin:auto;padding:0 28px;display:grid;grid-template-columns:1.12fr 1.08fr minmax(340px,.98fr);gap:32px;align-items:start}
+.footer-logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:20px}
+.address{margin-top:14px;color:#50657c;font-size:13px;line-height:1.9}
+.footer-nav{display:grid;grid-template-columns:1fr 1fr;gap:6px 40px;font-size:13px;font-weight:800}
+body .footer-contact{
+  position:relative;
+  display:grid;
+  grid-template-columns:36px minmax(0,1fr) auto;
+  align-items:center;
+  column-gap:16px;
+  min-height:96px;
+  padding:18px 24px;
+  background:var(--navy);
+  color:#fff;
+  border-radius:4px;
+  border:1px solid rgba(255,255,255,.08);
+  overflow:hidden;
+}
+body .footer-contact::after{
+  content:"";
+  position:absolute;
+  inset:1px;
+  border-radius:3px;
+  border:1px solid rgba(255,255,255,.08);
+  pointer-events:none;
+}
+body .footer-contact-icon{
+  width:34px;
+  height:42px;
+  border:2px solid currentColor;
+  border-radius:3px;
+  position:relative;
+  opacity:.96;
+}
+body .footer-contact-icon::before{
+  content:"";
+  position:absolute;
+  left:7px;
+  right:7px;
+  top:9px;
+  height:3px;
+  background:currentColor;
+  box-shadow:0 9px 0 currentColor;
+}
+body .footer-contact-icon::after{
+  content:"";
+  position:absolute;
+  right:-8px;
+  bottom:2px;
+  width:15px;
+  height:7px;
+  border:2px solid currentColor;
+  border-radius:2px;
+  transform:rotate(-42deg);
+  background:var(--navy);
+}
+body .footer-contact-body{
+  display:grid;
+  gap:4px;
+  min-width:0;
+}
+body .footer-contact strong{
+  display:block;
+  margin:0;
+  font-size:17px;
+  font-weight:800;
+  white-space:nowrap;
+  line-height:1.35;
+  letter-spacing:0;
+}
+body .footer-contact small{
+  display:block;
+  font-size:12.5px;
+  font-weight:700;
+  line-height:1.55;
+  color:rgba(255,255,255,.88);
+}
+body .footer-contact-arrow{
+  font-size:24px;
+  line-height:1;
+  font-weight:400;
+  margin-left:4px;
+}
+body .footer-contact-external{
+  position:absolute;
+  right:23px;
+  bottom:17px;
+  width:14px;
+  height:14px;
+  border:1.8px solid currentColor;
+  border-radius:2px;
+  opacity:.86;
+}
+body .footer-contact-external::before{
+  content:"";
+  position:absolute;
+  right:-3px;
+  top:-4px;
+  width:7px;
+  height:7px;
+  border-top:1.8px solid currentColor;
+  border-right:1.8px solid currentColor;
+}
+body .footer-contact-external::after{
+  content:"";
+  position:absolute;
+  right:-2px;
+  top:-2px;
+  width:9px;
+  height:1.8px;
+  background:currentColor;
+  transform:rotate(-45deg);
+  transform-origin:right center;
+}
+.disclaimer{text-align:center;max-width:var(--max);margin:24px auto 0;padding:0 28px;color:#6a7b8b;font-size:11px;line-height:1.8}
+.copyright{text-align:center;margin:6px 0 0;color:#6a7b8b;font-size:11px}
+
+@media(max-width:1000px){
+body .footer-grid{grid-template-columns:1fr}
+}
+
+
+@media(max-width:680px){
+body .footer-grid{padding:0 22px}
+body .footer-contact{grid-template-columns:30px minmax(0,1fr) auto;column-gap:12px;min-height:88px;padding:16px 20px}
+body .footer-contact-icon{width:29px;height:36px}
+body .footer-contact strong{font-size:16px}
+body .footer-contact small{font-size:12px;line-height:1.45}
+body .footer-contact-arrow{font-size:21px}
+body .footer-contact-external{right:19px;bottom:14px;width:12px;height:12px}
+}
