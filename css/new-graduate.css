@@ -70,7 +70,7 @@
 .graduate-hero-lead{max-width:660px;margin:0;color:#173350;font-size:15px;font-weight:700;line-height:2.08;text-wrap:pretty}
 
 .new-graduate-page:not(.mid-career-page) .graduate-hero{background:#edf6fc}
-.new-graduate-page:not(.mid-career-page) .graduate-hero-bg{object-position:center;transform:translate(24%,2%)}
+.new-graduate-page:not(.mid-career-page) .graduate-hero-bg{object-position:0% 0%;transform:translate(20%,0%)}
 .new-graduate-page:not(.mid-career-page) .graduate-hero:before{background:linear-gradient(90deg,rgba(255,255,255,.995) 0%,rgba(255,255,255,.98) 40%,rgba(238,248,255,.88) 56%,rgba(255,255,255,.34) 69%,rgba(255,255,255,0) 88%)}
 .new-graduate-page:not(.mid-career-page) .graduate-hero-inner{padding-top:90px}
 
@@ -119,12 +119,12 @@
 .graduate-outline th{width:210px;background:#eaf2f9;font-weight:800}
 
 .graduate-flow-section{padding-top:70px;padding-bottom:78px}
-.graduate-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px;position:relative;max-width:1100px;margin:0 auto}
-.graduate-flow article{position:relative;min-height:152px;padding:28px 24px;background:#fff;border:1px solid #d7e3ee;text-align:center;box-shadow:0 10px 24px rgba(8,44,85,.045)}
-.graduate-flow article:not(:last-child):after{content:"";position:absolute;right:-24px;top:50%;width:13px;height:13px;border-top:2px solid var(--navy);border-right:2px solid var(--navy);transform:translateY(-50%) rotate(45deg)}
-.graduate-flow span{display:block;margin:0 0 10px;color:#315d87;font-size:11px;font-weight:800;letter-spacing:.09em}
-.graduate-flow h3{margin:0 0 10px;color:var(--navy);font-size:17px;line-height:1.45}
-.graduate-flow p{margin:0;color:#354e68;font-size:13px;font-weight:600;line-height:1.85}
+.graduate-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px;position:relative;max-width:1180px;margin:0 auto}
+.graduate-flow article{position:relative;min-height:144px;padding:28px 18px 26px;background:#fff;border:1px solid #d7e3ee;text-align:center;box-shadow:0 10px 24px rgba(8,44,85,.045)}
+.graduate-flow article:not(:last-child):after{content:"";position:absolute;right:-18px;top:50%;width:10px;height:10px;border-top:1.5px solid var(--navy);border-right:1.5px solid var(--navy);transform:translateY(-50%) rotate(45deg)}
+.graduate-flow span{display:block;margin:0 0 11px;color:#315d87;font-size:11px;font-weight:800;line-height:1.2;letter-spacing:.09em}
+.graduate-flow h3{margin:0 0 11px;color:var(--navy);font-size:17px;line-height:1.45}
+.graduate-flow p{margin:0;color:#354e68;font-size:13px;font-weight:600;line-height:1.7;white-space:nowrap;word-break:keep-all;overflow-wrap:normal}
 
 .graduate-final-cta{position:relative;overflow:hidden;min-height:286px;background:#052052;color:#fff;display:flex;align-items:center}
 .graduate-final-cta:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,32,82,.94) 0%,rgba(5,32,82,.82) 44%,rgba(5,32,82,.32) 100%);z-index:1;pointer-events:none}
@@ -146,7 +146,7 @@
   white-space:nowrap;
 }
 
-.mid-career-page .graduate-hero-bg{object-position:center;transform:translate(4.8%,-4.2%)}
+.mid-career-page .graduate-hero-bg{object-position:0% 0%;transform:translate(18%,0%)}
 .mid-career-page .graduate-hero:before{background:linear-gradient(90deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.91) 32%,rgba(232,243,252,.54) 55%,rgba(255,255,255,.08) 80%)}
 .mid-career-page .graduate-message{background:linear-gradient(90deg,#f3f7fb 0%,#fff 58%)}
 .mid-career-page .graduate-final-cta h2{max-width:1080px;white-space:nowrap;font-size:clamp(27px,2.15vw,32px)}
