@@ -1,22 +1,23 @@
 /* works.css keeps the works page refinements scoped to body.works-page. */
 
 body.works-page .split-hero{
-  min-height:350px;
+  min-height:500px;
+  background:#fff;
 }
 
 body.works-page .split-hero .hero-bg{
-  inset:0 0 0 34%;
-  width:66%;
-  object-position:center 45%;
+  inset:0 0 0 36%;
+  width:64%;
+  object-position:center center;
 }
 
 body.works-page .split-hero:before{
-  background:linear-gradient(90deg,#fff 0%,#fff 31%,rgba(255,255,255,.9) 45%,rgba(255,255,255,.35) 66%,rgba(255,255,255,0) 100%);
+  background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.96) 31%,rgba(255,255,255,.78) 43%,rgba(238,248,255,.2) 64%,rgba(255,255,255,0) 100%);
 }
 
 body.works-page .split-hero .copy{
   max-width:1280px;
-  padding:28px 40px 46px;
+  padding:42px 40px 58px;
 }
 
 body.works-page .split-hero .crumb{
@@ -24,14 +25,14 @@ body.works-page .split-hero .crumb{
 }
 
 body.works-page .split-hero h1{
-  margin-bottom:8px;
-  font-size:56px;
+  margin-bottom:12px;
+  font-size:clamp(42px,4vw,58px);
   font-weight:700;
-  line-height:1.2;
+  line-height:1.15;
 }
 
 body.works-page .split-hero .en{
-  margin-bottom:30px;
+  margin-bottom:28px;
   font-size:18px;
   font-weight:800;
 }
@@ -45,21 +46,26 @@ body.works-page .split-hero .page-lead{
 
 body.works-page .split-hero .lead{
   margin:0;
-  font-size:14px;
-  font-weight:800;
+  font-size:15px;
+  font-weight:700;
   line-height:2.05;
 }
 
 body.works-page .split-hero .page-lead{
-  margin-top:28px;
-  font-size:13.5px;
-  font-weight:800;
-  line-height:2;
+  margin-top:22px;
+  font-size:15px;
+  font-weight:600;
+  line-height:1.95;
+}
+
+body.works-page main > section > .section{
+  padding-top:58px;
+  padding-bottom:60px;
 }
 
 body.works-page main > section > .section.u-pt-0{
-  padding-top:58px !important;
-  padding-bottom:66px;
+  padding-top:42px !important;
+  padding-bottom:60px;
 }
 
 body.works-page main > section > .section.u-pt-0 > .inner{
@@ -187,6 +193,10 @@ body.works-page .project:nth-child(6) p{
 }
 
 @media(max-width:760px){
+  body.works-page .split-hero{
+    min-height:408px;
+  }
+
   body.works-page .split-hero .hero-bg{
     inset:0;
     width:100%;
@@ -194,25 +204,21 @@ body.works-page .project:nth-child(6) p{
   }
 
   body.works-page .split-hero:before{
-    background:rgba(255,255,255,.8);
+    background:rgba(255,255,255,.72);
   }
 
   body.works-page .split-hero .copy{
-    padding:34px 28px 46px;
+    padding:30px 28px 44px;
   }
 }
 
 @media(max-width:680px){
-  body.works-page .split-hero{
-    min-height:390px;
-  }
-
   body.works-page .split-hero .copy{
     padding:28px 22px 40px;
   }
 
   body.works-page .split-hero h1{
-    font-size:40px;
+    font-size:38px;
   }
 
   body.works-page .split-hero .en{
@@ -222,17 +228,22 @@ body.works-page .project:nth-child(6) p{
 
   body.works-page .split-hero .lead,
   body.works-page .split-hero .page-lead{
-    font-size:13px;
+    font-size:14px;
     line-height:1.9;
   }
 
   body.works-page .split-hero .page-lead{
-    margin-top:22px;
+    margin-top:18px;
+  }
+
+  body.works-page main > section > .section{
+    padding-top:46px;
+    padding-bottom:48px;
   }
 
   body.works-page main > section > .section.u-pt-0{
-    padding-top:50px !important;
-    padding-bottom:54px;
+    padding-top:30px !important;
+    padding-bottom:48px;
   }
 
   body.works-page main > section > .section.u-pt-0 > .inner{

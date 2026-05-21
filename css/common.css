@@ -1,6 +1,6 @@
 /* common.css - migrated from inline CSS. Keep visual parity first. */
 
-:root{--navy:#062f5f;--deep:#092846;--blue:#0d6fb7;--green:#2c7a3d;--line:#d9e4ee;--paper:#f5f9fd;--text:#10283f;--muted:#52677d;--max:1180px;--serif:"Hiragino Mincho ProN","Yu Mincho",YuMincho,serif;--sans:"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,system-ui,sans-serif}
+:root{--navy:#062f5f;--deep:#092846;--blue:#0d6fb7;--green:#2c7a3d;--line:#d9e4ee;--paper:#f5f9fd;--text:#10283f;--muted:#52677d;--max:1180px;--serif:"Hiragino Mincho ProN","Yu Mincho",YuMincho,serif;--sans:"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,system-ui,sans-serif;--page-shell-gutter:clamp(20px,4.2vw,40px);--page-shell-wide:1240px;--page-shell-standard:1180px;--page-shell-compact:1080px}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;color:var(--text);font-family:var(--sans);line-height:1.85;background:#fff;letter-spacing:0}

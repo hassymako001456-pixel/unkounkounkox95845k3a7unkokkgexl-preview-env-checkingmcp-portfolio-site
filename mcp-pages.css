@@ -5560,3 +5560,62 @@ body.sustain-page .action p{
     flex:0 0 60px;
   }
 }
+
+/* site-wide body width normalization */
+body .company-page .company-overview-section .inner,
+body .company-page .company-thinking{
+  width:min(calc(100% - (var(--page-shell-gutter) * 2)),var(--page-shell-wide));
+  max-width:none;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:0;
+  padding-right:0;
+}
+
+body.works-page main > section > .section > .inner{
+  width:min(calc(100% - (var(--page-shell-gutter) * 2)),var(--page-shell-compact));
+  max-width:none;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:0;
+  padding-right:0;
+}
+
+body.sustain-page main > section > .section > .inner,
+body.recruit-page main > section > .section > .inner{
+  width:min(calc(100% - (var(--page-shell-gutter) * 2)),var(--page-shell-wide));
+  max-width:none;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:0;
+  padding-right:0;
+}
+
+body.contact-page main > section > .section > .inner{
+  width:min(calc(100% - (var(--page-shell-gutter) * 2)),var(--page-shell-standard));
+  max-width:none;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:0;
+  padding-right:0;
+}
+
+body.sustain-page .sustain-cards,
+body.sustain-page .action-grid,
+body.works-page .stats{
+  width:100%;
+  max-width:none;
+  margin-left:0;
+  margin-right:0;
+}
+
+@media(max-width:680px){
+  body .company-page .company-overview-section .inner,
+  body .company-page .company-thinking,
+  body.works-page main > section > .section > .inner,
+  body.sustain-page main > section > .section > .inner,
+  body.recruit-page main > section > .section > .inner,
+  body.contact-page main > section > .section > .inner{
+    width:min(calc(100% - 40px),100%);
+  }
+}
