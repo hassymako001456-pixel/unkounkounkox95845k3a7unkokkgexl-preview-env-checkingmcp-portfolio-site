@@ -7,10 +7,11 @@
 .social .esg-letter{background:#0872bb}
 .gov .esg-letter{background:#4b418e}
 .esg-card img{height:98px;width:100%;object-fit:cover;border-radius:4px;margin-bottom:14px}
-.check{padding:0;margin:0;display:grid;gap:10px;list-style:none}
-.check li{font-size:14px;font-weight:700;display:flex;gap:10px}
+.check{ padding:0;margin:0 auto;display:grid;gap:10px;list-style:none;width:max-content;max-width:100%;justify-items:start;transform:translateX(40px)}
+.check li{font-size:14px;font-weight:700;display:flex;gap:10px;align-items:center;text-align:left;justify-content:flex-start;}
 .check li:before{content:"✓";width:18px;height:18px;border:2px solid currentColor;border-radius:50%;display:grid;place-items:center;font-size:11px;line-height:1;color:var(--blue);flex:0 0 auto;margin-top:5px}
 .esg-card:first-child .check li:before{color:#2d763a}
+.esg-card > p {text-align: center;}
 .sdgs{background:#f8fbfe;border-radius:6px;padding:20px}
 .sdg-row{display:grid;grid-template-columns:repeat(8,1fr);gap:22px;margin-top:14px}
 .action-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}

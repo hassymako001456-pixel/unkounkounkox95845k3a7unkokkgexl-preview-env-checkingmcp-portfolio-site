@@ -395,6 +395,212 @@ body .home-hero .home-box p{color:#20262c}
 body .company-page .company-philosophy-section{
   padding:58px clamp(36px,5vw,82px) 68px;
 }
+
+/* sustainability LP alignment final */
+body.sustain-page .split-hero .copy{
+  max-width:1180px;
+  padding-top:56px;
+  padding-bottom:70px;
+}
+body.sustain-page .split-hero h1{
+  margin-bottom:10px;
+  font-size:clamp(44px,3.8vw,56px);
+  line-height:1.15;
+}
+body.sustain-page .split-hero .en{
+  margin-bottom:30px;
+}
+body.sustain-page .split-hero .lead,
+body.sustain-page .split-hero .page-lead{
+  max-width:520px!important;
+  margin:0 0 16px!important;
+  font-size:14.5px!important;
+  line-height:2!important;
+  font-weight:800!important;
+  letter-spacing:0;
+}
+body.sustain-page .split-hero .page-lead{
+  font-weight:700!important;
+}
+body.sustain-page .split-hero .page-lead:last-child{
+  margin-bottom:0!important;
+}
+body.sustain-page .sustain-cards{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:26px;
+  align-items:stretch;
+}
+body.sustain-page .esg-card{
+  display:flex;
+  flex-direction:column;
+  min-height:500px;
+  padding:24px 24px 26px;
+  background:#f8fbfe;
+  border:1px solid #e1eaf2;
+  border-radius:7px;
+}
+body.sustain-page .esg-head{
+  min-height:48px;
+  margin-bottom:18px;
+  gap:14px;
+  font-size:clamp(18px,1.45vw,22px);
+  line-height:1.35;
+  white-space:nowrap;
+}
+body.sustain-page .esg-letter{
+  width:42px;
+  height:42px;
+  font-size:22px;
+  flex:0 0 auto;
+}
+body.sustain-page .esg-card img{
+  width:100%;
+  height:132px;
+  margin-bottom:22px;
+  object-fit:cover;
+  border-radius:4px;
+}
+body.sustain-page .esg-card:nth-child(1) img{
+  object-position:center center;
+}
+body.sustain-page .esg-card:nth-child(2) img{
+  object-position:52% center;
+}
+body.sustain-page .esg-card:nth-child(3) img{
+  object-position:center center;
+}
+body.sustain-page .esg-card>p{
+  min-height:4.2em;
+  max-width:none;
+  margin:0 0 22px;
+  color:#18324d;
+  font-size:13.6px;
+  line-height:1.95;
+  font-weight:500;
+  letter-spacing:0;
+}
+body.sustain-page .check{
+  margin-top:auto;
+  gap:12px;
+}
+body.sustain-page .check li{
+  align-items:flex-start;
+  gap:12px;
+  font-size:13.3px;
+  line-height:1.65;
+  font-weight:700;
+}
+body.sustain-page .check li:before{
+  width:18px;
+  height:18px;
+  flex:0 0 18px;
+  margin-top:4px;
+}
+body.sustain-page .action-grid{
+  max-width:1320px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:30px;
+  align-items:start;
+}
+body.sustain-page .action{
+  min-width:0;
+  text-align:center;
+}
+body.sustain-page .action img{
+  width:100%;
+  height:116px;
+  margin:0 0 18px;
+  object-fit:cover;
+  border-radius:4px;
+}
+body.sustain-page .action h3{
+  min-height:0;
+  margin:0 0 24px;
+  color:var(--navy);
+  font-size:16px;
+  line-height:1.45;
+  font-weight:800;
+  letter-spacing:0;
+  text-align:center;
+}
+body.sustain-page .action p{
+  max-width:none;
+  margin:0;
+  color:#18324d;
+  font-size:12.8px;
+  line-height:1.8;
+  font-weight:500;
+  letter-spacing:0;
+  text-align:center;
+}
+@media(max-width:1100px){
+  body.sustain-page .sustain-cards{
+    grid-template-columns:1fr;
+    max-width:680px;
+    margin:0 auto;
+  }
+  body.sustain-page .esg-card{
+    min-height:0;
+  }
+  body.sustain-page .esg-card img{
+    height:220px;
+  }
+  body.sustain-page .esg-card>p{
+    min-height:0;
+  }
+  body.sustain-page .action-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    max-width:820px;
+  }
+}
+@media(max-width:680px){
+  body.sustain-page .split-hero .copy{
+    padding-top:34px;
+    padding-bottom:46px;
+  }
+  body.sustain-page .split-hero .lead,
+  body.sustain-page .split-hero .page-lead{
+    max-width:100%!important;
+    font-size:13.8px!important;
+    line-height:1.9!important;
+  }
+  body.sustain-page .esg-card{
+    padding:22px 20px 24px;
+  }
+  body.sustain-page .esg-head{
+    font-size:20px;
+    white-space:normal;
+  }
+  body.sustain-page .esg-card img{
+    height:180px;
+  }
+  body.sustain-page .action-grid{
+    grid-template-columns:1fr;
+    max-width:420px;
+  }
+  body.sustain-page .action img{
+    height:170px;
+  }
+  body.sustain-page .action h3{
+    margin-bottom:12px;
+  }
+  body.sustain-page .action p{
+    font-size:13.2px;
+    line-height:1.85;
+  }
+  body.sustain-page .sdg-row{
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:14px;
+  }
+  body.sustain-page .sdg-row img{
+    width:100%;
+    max-width:94px;
+    justify-self:center;
+  }
+}
 body .company-page .company-philosophy-section .philosophy{
   max-width:1320px;
   grid-template-columns:minmax(290px,.96fr) minmax(420px,1.18fr) minmax(310px,.98fr);
@@ -5098,5 +5304,259 @@ body.service-page .service-business-section .service-feature-icon::after{
   body.service-page .service-business-section .feature-icons div{
     min-height:62px;
     font-size:11.8px!important;
+  }
+}
+
+/* sustainability LP alignment final override */
+body.sustain-page .split-hero .copy{
+  max-width:1180px;
+  padding-top:56px;
+  padding-bottom:70px;
+}
+body.sustain-page .split-hero h1{
+  margin-bottom:10px;
+  font-size:clamp(44px,3.8vw,56px);
+  line-height:1.15;
+}
+body.sustain-page .split-hero .en{
+  margin-bottom:30px;
+}
+body.sustain-page .split-hero .lead,
+body.sustain-page .split-hero .page-lead{
+  max-width:520px!important;
+  margin:0 0 16px!important;
+  font-size:14.5px!important;
+  line-height:2!important;
+  font-weight:800!important;
+  letter-spacing:0;
+}
+body.sustain-page .split-hero .page-lead{
+  font-weight:700!important;
+}
+body.sustain-page .split-hero .page-lead:last-child{
+  margin-bottom:0!important;
+}
+body.sustain-page .sustain-cards{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:26px;
+  align-items:stretch;
+}
+body.sustain-page .esg-card{
+  display:flex;
+  flex-direction:column;
+  min-height:500px;
+  padding:24px 24px 26px;
+  background:#f8fbfe;
+  border:1px solid #e1eaf2;
+  border-radius:7px;
+}
+body.sustain-page .esg-head{
+  min-height:48px;
+  margin-bottom:18px;
+  gap:14px;
+  font-size:clamp(18px,1.45vw,22px);
+  line-height:1.35;
+  white-space:nowrap;
+}
+body.sustain-page .esg-letter{
+  width:42px;
+  height:42px;
+  font-size:22px;
+  flex:0 0 auto;
+}
+body.sustain-page .esg-card img{
+  width:100%;
+  height:132px;
+  margin-bottom:22px;
+  object-fit:cover;
+  border-radius:4px;
+}
+body.sustain-page .esg-card:nth-child(1) img{
+  object-position:center center;
+}
+body.sustain-page .esg-card:nth-child(2) img{
+  object-position:52% center;
+}
+body.sustain-page .esg-card:nth-child(3) img{
+  object-position:center center;
+}
+body.sustain-page .esg-card>p{
+  min-height:4.2em;
+  max-width:none;
+  margin:0 0 22px;
+  color:#18324d;
+  font-size:13.6px;
+  line-height:1.95;
+  font-weight:500;
+  letter-spacing:0;
+}
+body.sustain-page .check{
+  margin-top:auto;
+  gap:12px;
+}
+body.sustain-page .check li{
+  align-items:flex-start;
+  gap:12px;
+  font-size:13.3px;
+  line-height:1.65;
+  font-weight:700;
+}
+body.sustain-page .check li:before{
+  width:18px;
+  height:18px;
+  flex:0 0 18px;
+  margin-top:4px;
+}
+body.sustain-page .action-grid{
+  max-width:1320px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:30px;
+  align-items:start;
+}
+body.sustain-page .action{
+  min-width:0;
+  text-align:center;
+}
+body.sustain-page .action img{
+  width:100%;
+  height:116px;
+  margin:0 0 18px;
+  object-fit:cover;
+  border-radius:4px;
+}
+body.sustain-page .action h3{
+  min-height:0;
+  margin:0 0 24px;
+  color:var(--navy);
+  font-size:16px;
+  line-height:1.45;
+  font-weight:800;
+  letter-spacing:0;
+  text-align:center;
+}
+body.sustain-page .action p{
+  max-width:none;
+  margin:0;
+  color:#18324d;
+  font-size:12.8px;
+  line-height:1.8;
+  font-weight:500;
+  letter-spacing:0;
+  text-align:center;
+}
+@media(max-width:1100px){
+  body.sustain-page .sustain-cards{
+    grid-template-columns:1fr;
+    max-width:680px;
+    margin:0 auto;
+  }
+  body.sustain-page .esg-card{
+    min-height:0;
+  }
+  body.sustain-page .esg-card img{
+    height:220px;
+  }
+  body.sustain-page .esg-card>p{
+    min-height:0;
+  }
+  body.sustain-page .action-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    max-width:820px;
+  }
+}
+@media(max-width:680px){
+  body.sustain-page .split-hero .copy{
+    padding-top:34px;
+    padding-bottom:46px;
+  }
+  body.sustain-page .split-hero .lead,
+  body.sustain-page .split-hero .page-lead{
+    max-width:100%!important;
+    font-size:13.8px!important;
+    line-height:1.9!important;
+  }
+  body.sustain-page .esg-card{
+    padding:22px 20px 24px;
+  }
+  body.sustain-page .esg-head{
+    font-size:20px;
+    white-space:normal;
+  }
+  body.sustain-page .esg-card img{
+    height:180px;
+  }
+  body.sustain-page .action-grid{
+    grid-template-columns:1fr;
+    max-width:420px;
+  }
+  body.sustain-page .action img{
+    height:170px;
+  }
+  body.sustain-page .action h3{
+    margin-bottom:12px;
+  }
+  body.sustain-page .action p{
+    font-size:13.2px;
+    line-height:1.85;
+  }
+}
+/* sustainability mobile overflow guard */
+@media(max-width:680px){
+  body.sustain-page{
+    overflow-x:hidden;
+  }
+  body.sustain-page main,
+  body.sustain-page main > section,
+  body.sustain-page .section,
+  body.sustain-page .inner,
+  body.sustain-page .sustain-cards,
+  body.sustain-page .esg-card,
+  body.sustain-page .sdgs,
+  body.sustain-page .action-grid,
+  body.sustain-page .action{
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+  }
+  body.sustain-page main > section{
+    overflow-x:hidden;
+  }
+  body.sustain-page .section-title{
+    width:min(100%,11em)!important;
+    max-width:100%;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    font-size:22px;
+    line-height:1.45;
+    white-space:normal;
+    overflow-wrap:anywhere;
+    word-break:normal;
+  }
+  body.sustain-page .sdgs{
+    overflow:hidden;
+  }
+  body.sustain-page .sdgs p{
+    width:min(100%,22em);
+    max-width:100%;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    font-size:13px;
+    line-height:1.9;
+    overflow-wrap:anywhere;
+  }
+  body.sustain-page .sdg-row{
+    width:100%!important;
+    display:flex!important;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:14px 24px!important;
+  }
+  body.sustain-page .sdg-row img{
+    width:60px!important;
+    max-width:60px!important;
+    flex:0 0 60px;
   }
 }

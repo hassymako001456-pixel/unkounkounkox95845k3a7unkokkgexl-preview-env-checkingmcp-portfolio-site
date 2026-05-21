@@ -48,8 +48,8 @@
 
 .news-archive-item{
   display:grid;
-  grid-template-columns:128px 118px minmax(0,1fr) 24px;
-  gap:22px;
+  grid-template-columns:150px minmax(0,1fr) 24px;
+  gap:20px;
   align-items:center;
   min-height:46px;
   padding:10px 10px 10px 22px;
@@ -71,40 +71,6 @@
   white-space:nowrap;
 }
 
-.news-category{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-width:96px;
-  min-height:24px;
-  padding:3px 12px;
-  border-radius:3px;
-  font-size:11px;
-  font-weight:800;
-  line-height:1.2;
-  white-space:nowrap;
-}
-
-.news-category--notice{
-  background:#e7f0f8;
-  color:#0d5793;
-}
-
-.news-category--recruit{
-  background:#e8f4ec;
-  color:#287546;
-}
-
-.news-category--business{
-  background:#e8eef4;
-  color:#244f76;
-}
-
-.news-category--sustainability{
-  background:#eeeafb;
-  color:#544493;
-}
-
 .news-archive-title{
   min-width:0;
   color:#17304a;
@@ -119,35 +85,6 @@
   font-weight:300;
   line-height:1;
   text-align:right;
-}
-
-.news-pagination{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  margin-top:20px;
-}
-
-.news-pagination a,
-.news-pagination span{
-  display:grid;
-  place-items:center;
-  min-width:30px;
-  height:30px;
-  border-radius:4px;
-  color:#0b2f57;
-  font-size:13px;
-  font-weight:800;
-}
-
-.news-pagination span{
-  background:var(--navy);
-  color:#fff;
-}
-
-.news-pagination a:hover{
-  background:#edf4fa;
 }
 
 .news-detail{
@@ -343,23 +280,16 @@
     grid-row:1;
   }
 
-  .news-archive-item .news-category{
+  .news-archive-title{
     grid-column:1;
     grid-row:2;
-    justify-self:start;
-    min-width:86px;
-  }
-
-  .news-archive-title{
-    grid-column:1 / 3;
-    grid-row:3;
-    padding-right:24px;
+    padding-right:0;
     font-size:14px;
   }
 
   .news-archive-arrow{
     grid-column:2;
-    grid-row:1 / 4;
+    grid-row:1 / 3;
     align-self:center;
   }
 
