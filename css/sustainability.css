@@ -28,31 +28,39 @@ body.sustain-page .split-hero:before {
 
 body.sustain-page .split-hero .copy {
   max-width: 1180px;
-  padding-top: 56px;
-  padding-bottom: 70px;
+  padding: 56px 40px 70px;
 }
 
 body.sustain-page .split-hero h1 {
-  margin-bottom: 10px;
-  font-size: clamp(44px,3.8vw,56px);
+  margin-bottom: 8px;
+  font-size: clamp(44px,3.9vw,58px);
   line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: .01em;
 }
 
 body.sustain-page .split-hero .en {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+  font-size: 18px;
+  font-weight: 800;
 }
 
 body.sustain-page .split-hero .lead, body.sustain-page .split-hero .page-lead {
   max-width: 520px!important;
-  margin: 0 0 16px!important;
-  font-size: 14.5px!important;
-  line-height: 2!important;
+  margin: 0!important;
+  color: #16324d!important;
+  font-size: 15px!important;
+  line-height: 2.05!important;
   font-weight: 800!important;
   letter-spacing: 0;
+  text-wrap: pretty;
 }
 
 body.sustain-page .split-hero .page-lead {
+  margin-top: 18px!important;
+  font-size: 14px!important;
   font-weight: 700!important;
+  line-height: 2.1!important;
 }
 
 body.sustain-page .split-hero .page-lead:last-child {
@@ -283,13 +291,12 @@ body.sustain-page .action p {
   }
 
   body.sustain-page .split-hero .copy {
-    padding-top: 34px;
-    padding-bottom: 46px;
+    padding: 34px 22px 46px;
   }
 
   body.sustain-page .split-hero .lead, body.sustain-page .split-hero .page-lead {
     max-width: 100%!important;
-    font-size: 13.8px!important;
+    font-size: 14px!important;
     line-height: 1.9!important;
   }
 

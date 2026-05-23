@@ -25,19 +25,20 @@ body.works-page .split-hero:before {
 }
 
 body.works-page .split-hero .copy {
-  max-width: 1280px;
-  padding: 42px 40px 58px;
+  max-width: 1180px;
+  padding: 56px 40px 70px;
 }
 
 body.works-page .split-hero .crumb {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 body.works-page .split-hero h1 {
-  margin-bottom: 12px;
-  font-size: clamp(42px,4vw,58px);
+  margin-bottom: 8px;
+  font-size: clamp(44px,3.9vw,58px);
   font-weight: 700;
   line-height: 1.15;
+  letter-spacing: .01em;
 }
 
 body.works-page .split-hero .en {
@@ -47,23 +48,23 @@ body.works-page .split-hero .en {
 }
 
 body.works-page .split-hero .lead, body.works-page .split-hero .page-lead {
-  max-width: 31em;
-  color: #132f4a;
+  max-width: 520px;
+  color: #16324d;
   text-wrap: pretty;
 }
 
 body.works-page .split-hero .lead {
   margin: 0;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 2.05;
 }
 
 body.works-page .split-hero .page-lead {
-  margin-top: 22px;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 1.95;
+  margin-top: 18px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 2.1;
 }
 
 body.works-page main > section > .section {
@@ -218,7 +219,7 @@ body.works-page .project p, body.works-page .project:nth-child(2) p, body.works-
 
 @media(max-width:760px) {
   body.works-page .split-hero {
-    min-height: 408px;
+    min-height: 430px;
   }
 
   body.works-page .split-hero .hero-bg {
@@ -232,7 +233,7 @@ body.works-page .project p, body.works-page .project:nth-child(2) p, body.works-
   }
 
   body.works-page .split-hero .copy {
-    padding: 30px 28px 44px;
+    padding: 40px 28px 48px;
   }
 }
 
@@ -243,7 +244,7 @@ body.works-page .project p, body.works-page .project:nth-child(2) p, body.works-
   }
 
   body.works-page .split-hero .copy {
-    padding: 28px 22px 40px;
+    padding: 34px 22px 46px;
   }
 
   body.works-page .split-hero h1 {
@@ -256,6 +257,7 @@ body.works-page .project p, body.works-page .project:nth-child(2) p, body.works-
   }
 
   body.works-page .split-hero .lead, body.works-page .split-hero .page-lead {
+    max-width: 100%;
     font-size: 14px;
     line-height: 1.9;
   }
