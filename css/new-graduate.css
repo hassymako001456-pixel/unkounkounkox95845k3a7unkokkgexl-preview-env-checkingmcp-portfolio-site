@@ -1,254 +1,952 @@
 /* New graduate LP styles. Scoped to avoid affecting the existing site. */
 
-.new-graduate-page{background:#fff;color:#0d2948;overflow-x:hidden}
-.new-graduate-page .site-header{
-  width:100vw;
-  max-width:100vw;
-  overflow:hidden;
-}
-.new-graduate-page .site-header .header-inner{
-  width:100%;
-  max-width:none;
-  padding-right:34px;
-  justify-content:space-between;
-}
-.new-graduate-page .site-header .brand{
-  min-width:0!important;
-  flex:0 1 auto;
-}
-.graduate-header-entry{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-width:136px;
-  min-height:46px;
-  padding:0 28px;
-  background:var(--navy);
-  color:#fff;
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:4px;
-  box-shadow:0 8px 18px rgba(8,44,85,.16);
-  font-size:16px;
-  font-weight:800;
-  line-height:1;
-  letter-spacing:.06em;
-  flex:0 0 auto;
-}
-.graduate-header-entry:hover{
-  background:#05284f;
-}
-.graduate-mobile-entry{
-  display:none;
-}
-.new-graduate-page main > .section,
-.new-graduate-page main > section.section{
-  padding-top:72px;
-  padding-bottom:76px;
-}
-.new-graduate-page .inner{
-  max-width:1220px;
-}
-.new-graduate-page .section-title{
-  margin-bottom:30px;
-  font-size:clamp(28px,2.4vw,34px);
-  line-height:1.42;
-  letter-spacing:0;
-}
-.new-graduate-page .section-title:after{
-  width:42px;
-  margin-top:14px;
+
+.new-graduate-page {
+  background: #fff;
+  color: #0d2948;
+  overflow-x: hidden;
 }
 
-.graduate-hero{position:relative;min-height:700px;display:flex;align-items:center;overflow:hidden;background:#dfeef9}
-.graduate-hero-bg{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;object-position:center}
-.graduate-hero:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.9) 32%,rgba(235,246,255,.64) 56%,rgba(255,255,255,.18) 82%)}
-.graduate-hero:after{content:"";position:absolute;left:0;right:0;bottom:0;z-index:1;height:110px;background:linear-gradient(0deg,#fff,rgba(255,255,255,0))}
-.graduate-hero-inner{position:relative;z-index:2;width:100%;max-width:1320px;margin:0 auto;padding:96px 42px 124px}
-.graduate-label{margin:0 0 20px;color:#164d82;font-size:12px;font-weight:800;letter-spacing:.18em}
-.graduate-hero h1{margin:0;color:var(--navy);font-size:clamp(58px,7.2vw,108px);font-weight:900;line-height:.95;letter-spacing:0}
-.graduate-hero-copy{margin:32px 0 18px;color:var(--navy);font-family:var(--serif);font-size:clamp(22px,2.2vw,32px);font-weight:700;line-height:1.5}
-.graduate-hero-lead{max-width:660px;margin:0;color:#173350;font-size:15px;font-weight:700;line-height:2.08;text-wrap:pretty}
-
-.new-graduate-page:not(.mid-career-page) .graduate-hero{background:#edf6fc}
-.new-graduate-page:not(.mid-career-page) .graduate-hero-bg{object-position:0% 0%;transform:translate(20%,0%)}
-.new-graduate-page:not(.mid-career-page) .graduate-hero:before{background:linear-gradient(90deg,rgba(255,255,255,.995) 0%,rgba(255,255,255,.98) 40%,rgba(238,248,255,.88) 56%,rgba(255,255,255,.34) 69%,rgba(255,255,255,0) 88%)}
-.new-graduate-page:not(.mid-career-page) .graduate-hero-inner{padding-top:90px}
-
-.section-kicker{margin:0 0 12px;color:#23598b;font-size:12px;font-weight:800;letter-spacing:.16em}
-.graduate-message{padding-top:0;padding-bottom:0;background:linear-gradient(90deg,#f4f9fd 0%,#fff 62%)}
-.new-graduate-page main > section.graduate-message{padding-top:36px;padding-bottom:44px}
-.graduate-message-grid{display:grid;grid-template-columns:minmax(340px,500px) minmax(0,1fr);gap:56px;align-items:center}
-.graduate-message-visual{display:grid;grid-template-columns:1fr 1fr;gap:14px;overflow:hidden}
-.graduate-message-visual img{width:100%;height:260px;object-fit:cover;filter:saturate(.96) contrast(.98)}
-.graduate-message-body{padding:40px 0 42px}
-.graduate-message-body h2{margin:0 0 18px;color:var(--navy);font-family:var(--serif);font-size:clamp(28px,2.5vw,38px);line-height:1.45;text-wrap:balance}
-.graduate-message-body p:not(.section-kicker){max-width:760px;margin:0 0 11px;font-size:14.5px;font-weight:600;line-height:1.98;color:#18324d;text-wrap:pretty}
-
-.graduate-work-section{padding-top:72px;padding-bottom:76px}
-.graduate-work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
-.graduate-work-card{display:grid;grid-template-columns:178px minmax(0,1fr);min-height:190px;background:#fff;border:1px solid #d7e3ee;box-shadow:0 12px 30px rgba(8,44,85,.055)}
-.graduate-work-card img{width:100%;height:100%;object-fit:cover}
-.graduate-work-card div{padding:26px 26px 24px}
-.graduate-work-card h3{margin:0 0 12px;color:var(--navy);font-size:19px;line-height:1.45}
-.graduate-work-card p{margin:0;color:#243b55;font-size:13.5px;font-weight:600;line-height:1.95;text-wrap:pretty}
-
-.graduate-career-section{padding-top:72px;padding-bottom:76px;background:linear-gradient(180deg,#f6faff 0%,#fff 100%)}
-.graduate-career{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;position:relative;padding-top:18px}
-.graduate-career:before{content:"";position:absolute;left:12%;right:12%;top:56px;height:2px;background:#b8cfe3}
-.graduate-career article{position:relative;text-align:center;padding:0 28px}
-.graduate-career article:after{content:"";position:absolute;right:-8px;top:49px;width:16px;height:16px;border-top:2px solid var(--navy);border-right:2px solid var(--navy);transform:rotate(45deg);background:#f8fbff}
-.graduate-career article:last-child:after{display:none}
-.graduate-career span{position:relative;z-index:1;width:72px;height:72px;margin:0 auto 16px;border:1px solid #c6d8e8;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--navy);font-family:var(--serif);font-size:21px;font-weight:800;box-shadow:0 10px 24px rgba(8,44,85,.055)}
-.graduate-career small{display:block;color:#46617d;font-size:12px;font-weight:800}
-.graduate-career h3{margin:8px 0 12px;color:var(--navy);font-size:17px;line-height:1.5}
-.graduate-career p{margin:0;color:#263d55;font-size:13px;font-weight:600;line-height:1.95;text-wrap:pretty}
-
-.graduate-environment-section{padding-top:72px;padding-bottom:76px}
-.graduate-stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid #d8e5ef;border-bottom:1px solid #d8e5ef;background:#fff}
-.graduate-stats div{text-align:center;padding:26px 20px;border-right:1px solid #d8e5ef}
-.graduate-stats div:last-child{border-right:0}
-.graduate-stats span,.graduate-stats em,.graduate-stats small{display:block;font-style:normal;font-weight:800}
-.graduate-stats span{color:#244767;font-size:13px}
-.graduate-stats strong{display:inline-block;margin:8px 2px 4px;color:var(--navy);font-family:var(--serif);font-size:44px;line-height:1}
-.graduate-stats em{color:#153759;font-size:15px}
-.graduate-stats small{margin-top:10px;color:#65798d;font-size:12px;line-height:1.7}
-
-.graduate-requirements-section{background:#f6f9fd;padding-top:70px;padding-bottom:76px}
-.graduate-outline{max-width:1100px;margin:0 auto;background:#fff;box-shadow:0 10px 26px rgba(8,44,85,.045)}
-.graduate-outline th,.graduate-outline td{padding:15px 24px;line-height:1.85}
-.graduate-outline th{width:210px;background:#eaf2f9;font-weight:800}
-
-.graduate-flow-section{padding-top:70px;padding-bottom:78px}
-.graduate-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px;position:relative;max-width:1180px;margin:0 auto}
-.graduate-flow article{position:relative;min-height:144px;padding:28px 18px 26px;background:#fff;border:1px solid #d7e3ee;text-align:center;box-shadow:0 10px 24px rgba(8,44,85,.045)}
-.graduate-flow article:not(:last-child):after{content:"";position:absolute;right:-18px;top:50%;width:10px;height:10px;border-top:1.5px solid var(--navy);border-right:1.5px solid var(--navy);transform:translateY(-50%) rotate(45deg)}
-.graduate-flow span{display:block;margin:0 0 11px;color:#315d87;font-size:11px;font-weight:800;line-height:1.2;letter-spacing:.09em}
-.graduate-flow h3{margin:0 0 11px;color:var(--navy);font-size:17px;line-height:1.45}
-.graduate-flow p{margin:0;color:#354e68;font-size:13px;font-weight:600;line-height:1.7;white-space:nowrap;word-break:keep-all;overflow-wrap:normal}
-
-.graduate-final-cta{position:relative;overflow:hidden;min-height:286px;background:#052052;color:#fff;display:flex;align-items:center}
-.graduate-final-cta:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,32,82,.94) 0%,rgba(5,32,82,.82) 44%,rgba(5,32,82,.32) 100%);z-index:1;pointer-events:none}
-.graduate-final-cta-inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;max-width:var(--max);min-height:286px;margin:0 auto;padding:44px 28px 46px;text-align:center}
-.graduate-final-cta h2{max-width:980px;margin:0 0 16px;font-family:var(--serif);font-size:clamp(28px,2.3vw,34px);line-height:1.45;letter-spacing:0;font-weight:700;text-wrap:balance}
-.graduate-final-cta p{max-width:760px;margin:0 0 22px;font-size:14px;font-weight:700;line-height:1.9;color:rgba(255,255,255,.92);text-wrap:pretty}
-.graduate-entry-button{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-width:250px;min-height:58px;padding:15px 32px;background:#fff;color:#0b2f63;border:1px solid rgba(255,255,255,.82);border-radius:4px;box-shadow:0 8px 22px rgba(0,0,0,.18);font-size:14px;font-weight:800;line-height:1.4}
-.graduate-entry-button:hover{background:#f4f8fc;transform:translateY(-1px)}
-.graduate-entry-button strong{font-size:14px;letter-spacing:0;line-height:1.4}
-.graduate-entry-button span{font-size:14px}
-.new-graduate-page .graduate-footer-nav{
-  grid-template-columns:1fr 1fr;
-  grid-template-rows:repeat(2,auto);
-  grid-auto-flow:column;
-  gap:12px 48px;
-  align-self:center;
-}
-.new-graduate-page .graduate-footer-nav a{
-  white-space:nowrap;
+.new-graduate-page .site-header {
+  width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
 }
 
-.mid-career-page .graduate-hero-bg{object-position:0% 0%;transform:translate(18%,0%)}
-.mid-career-page .graduate-hero:before{background:linear-gradient(90deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.91) 32%,rgba(232,243,252,.54) 55%,rgba(255,255,255,.08) 80%)}
-.mid-career-page .graduate-message{background:linear-gradient(90deg,#f3f7fb 0%,#fff 58%)}
-.mid-career-page .graduate-final-cta h2{max-width:1080px;white-space:nowrap;font-size:clamp(27px,2.15vw,32px)}
-.mid-career-page .graduate-work-card:first-child img{object-position:center}
-.mid-career-page .graduate-work-card:nth-child(3) img{object-position:center}
-.mid-career-page .graduate-career-section{background:linear-gradient(180deg,#f4f8fc 0%,#fff 100%)}
-
-@media(max-width:1280px){
-  .graduate-work-card{grid-template-columns:140px minmax(0,1fr)}
+.new-graduate-page .site-header .header-inner {
+  width: 100%;
+  max-width: none;
+  padding-right: 34px;
+  justify-content: space-between;
 }
 
-@media(max-width:1100px){
-  .new-graduate-page .site-header .header-inner{
-    padding-right:28px;
+.new-graduate-page .site-header .brand {
+  min-width: 0!important;
+  flex: 0 1 auto;
+}
+
+.graduate-header-entry {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 136px;
+  min-height: 46px;
+  padding: 0 28px;
+  background: var(--navy);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 4px;
+  box-shadow: 0 8px 18px rgba(8,44,85,.16);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: .06em;
+  flex: 0 0 auto;
+}
+
+.graduate-header-entry:hover {
+  background: #05284f;
+}
+
+.graduate-mobile-entry {
+  display: none;
+}
+
+.new-graduate-page main > .section, .new-graduate-page main > section.section {
+  padding-top: 72px;
+  padding-bottom: 76px;
+}
+
+.new-graduate-page .inner {
+  max-width: 1220px;
+}
+
+.new-graduate-page .section-title {
+  margin-bottom: 30px;
+  font-size: clamp(28px,2.4vw,34px);
+  line-height: 1.42;
+  letter-spacing: 0;
+}
+
+.new-graduate-page .section-title:after {
+  width: 42px;
+  margin-top: 14px;
+}
+
+.graduate-hero {
+  position: relative;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #dfeef9;
+}
+
+.graduate-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.graduate-hero:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,.97) 0%,
+    rgba(255,255,255,.9) 32%,
+    rgba(235,246,255,.64) 56%,
+    rgba(255,255,255,.18) 82%
+  );
+}
+
+.graduate-hero:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 110px;
+  background: linear-gradient(
+    0deg,
+    #fff,
+    rgba(255,255,255,0)
+  );
+}
+
+.graduate-hero-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 96px 42px 124px;
+}
+
+.graduate-label {
+  margin: 0 0 20px;
+  color: #164d82;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .18em;
+}
+
+.graduate-hero h1 {
+  margin: 0;
+  color: var(--navy);
+  font-size: clamp(58px,7.2vw,108px);
+  font-weight: 900;
+  line-height: .95;
+  letter-spacing: 0;
+}
+
+.graduate-hero-copy {
+  margin: 32px 0 18px;
+  color: var(--navy);
+  font-family: var(--serif);
+  font-size: clamp(22px,2.2vw,32px);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.graduate-hero-lead {
+  max-width: 660px;
+  margin: 0;
+  color: #173350;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 2.08;
+  text-wrap: pretty;
+}
+
+.new-graduate-page:not(.mid-career-page) .graduate-hero {
+  background: #edf6fc;
+}
+
+.new-graduate-page:not(.mid-career-page) .graduate-hero-bg {
+  object-position: 0% 0%;
+  transform: translate(20%,0%);
+}
+
+.new-graduate-page:not(.mid-career-page) .graduate-hero:before {
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,.995) 0%,
+    rgba(255,255,255,.98) 40%,
+    rgba(238,248,255,.88) 56%,
+    rgba(255,255,255,.34) 69%,
+    rgba(255,255,255,0) 88%
+  );
+}
+
+.new-graduate-page:not(.mid-career-page) .graduate-hero-inner {
+  padding-top: 90px;
+}
+
+.section-kicker {
+  margin: 0 0 12px;
+  color: #23598b;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .16em;
+}
+
+.graduate-message {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: linear-gradient(
+    90deg,
+    #f4f9fd 0%,
+    #fff 62%
+  );
+}
+
+.new-graduate-page main > section.graduate-message {
+  padding-top: 36px;
+  padding-bottom: 44px;
+}
+
+.graduate-message-grid {
+  display: grid;
+  grid-template-columns: minmax(340px,500px) minmax(0,1fr);
+  gap: 56px;
+  align-items: center;
+}
+
+.graduate-message-visual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  overflow: hidden;
+}
+
+.graduate-message-visual img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  filter: saturate(.96) contrast(.98);
+}
+
+.graduate-message-body {
+  padding: 40px 0 42px;
+}
+
+.graduate-message-body h2 {
+  margin: 0 0 18px;
+  color: var(--navy);
+  font-family: var(--serif);
+  font-size: clamp(28px,2.5vw,38px);
+  line-height: 1.45;
+  text-wrap: balance;
+}
+
+.graduate-message-body p:not(.section-kicker) {
+  max-width: 760px;
+  margin: 0 0 11px;
+  font-size: 14.5px;
+  font-weight: 600;
+  line-height: 1.98;
+  color: #18324d;
+  text-wrap: pretty;
+}
+
+.graduate-work-section {
+  padding-top: 72px;
+  padding-bottom: 76px;
+}
+
+.graduate-work-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 28px;
+}
+
+.graduate-work-card {
+  display: grid;
+  grid-template-columns: 178px minmax(0,1fr);
+  min-height: 190px;
+  background: #fff;
+  border: 1px solid #d7e3ee;
+  box-shadow: 0 12px 30px rgba(8,44,85,.055);
+}
+
+.graduate-work-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.graduate-work-card div {
+  padding: 26px 26px 24px;
+}
+
+.graduate-work-card h3 {
+  margin: 0 0 12px;
+  color: var(--navy);
+  font-size: 19px;
+  line-height: 1.45;
+}
+
+.graduate-work-card p {
+  margin: 0;
+  color: #243b55;
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1.95;
+  text-wrap: pretty;
+}
+
+.graduate-career-section {
+  padding-top: 72px;
+  padding-bottom: 76px;
+  background: linear-gradient(
+    180deg,
+    #f6faff 0%,
+    #fff 100%
+  );
+}
+
+.graduate-career {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 0;
+  position: relative;
+  padding-top: 18px;
+}
+
+.graduate-career:before {
+  content: "";
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  top: 56px;
+  height: 2px;
+  background: #b8cfe3;
+}
+
+.graduate-career article {
+  position: relative;
+  text-align: center;
+  padding: 0 28px;
+}
+
+.graduate-career article:after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: 49px;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid var(--navy);
+  border-right: 2px solid var(--navy);
+  transform: rotate(45deg);
+  background: #f8fbff;
+}
+
+.graduate-career article:last-child:after {
+  display: none;
+}
+
+.graduate-career span {
+  position: relative;
+  z-index: 1;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 16px;
+  border: 1px solid #c6d8e8;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  color: var(--navy);
+  font-family: var(--serif);
+  font-size: 21px;
+  font-weight: 800;
+  box-shadow: 0 10px 24px rgba(8,44,85,.055);
+}
+
+.graduate-career small {
+  display: block;
+  color: #46617d;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.graduate-career h3 {
+  margin: 8px 0 12px;
+  color: var(--navy);
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.graduate-career p {
+  margin: 0;
+  color: #263d55;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.95;
+  text-wrap: pretty;
+}
+
+.graduate-environment-section {
+  padding-top: 72px;
+  padding-bottom: 76px;
+}
+
+.graduate-stats {
+  display: grid;
+  grid-template-columns: repeat(5,minmax(0,1fr));
+  border-top: 1px solid #d8e5ef;
+  border-bottom: 1px solid #d8e5ef;
+  background: #fff;
+}
+
+.graduate-stats div {
+  text-align: center;
+  padding: 26px 20px;
+  border-right: 1px solid #d8e5ef;
+}
+
+.graduate-stats div:last-child {
+  border-right: 0;
+}
+
+.graduate-stats span,.graduate-stats em,.graduate-stats small {
+  display: block;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.graduate-stats span {
+  color: #244767;
+  font-size: 13px;
+}
+
+.graduate-stats strong {
+  display: inline-block;
+  margin: 8px 2px 4px;
+  color: var(--navy);
+  font-family: var(--serif);
+  font-size: 44px;
+  line-height: 1;
+}
+
+.graduate-stats em {
+  color: #153759;
+  font-size: 15px;
+}
+
+.graduate-stats small {
+  margin-top: 10px;
+  color: #65798d;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.graduate-requirements-section {
+  background: #f6f9fd;
+  padding-top: 70px;
+  padding-bottom: 76px;
+}
+
+.graduate-outline {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 10px 26px rgba(8,44,85,.045);
+}
+
+.graduate-outline th,.graduate-outline td {
+  padding: 15px 24px;
+  line-height: 1.85;
+}
+
+.graduate-outline th {
+  width: 210px;
+  background: #eaf2f9;
+  font-weight: 800;
+}
+
+.graduate-flow-section {
+  padding-top: 70px;
+  padding-bottom: 78px;
+}
+
+.graduate-flow {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 26px;
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.graduate-flow article {
+  position: relative;
+  min-height: 144px;
+  padding: 28px 18px 26px;
+  background: #fff;
+  border: 1px solid #d7e3ee;
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(8,44,85,.045);
+}
+
+.graduate-flow article:not(:last-child):after {
+  content: "";
+  position: absolute;
+  right: -18px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-top: 1.5px solid var(--navy);
+  border-right: 1.5px solid var(--navy);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.graduate-flow span {
+  display: block;
+  margin: 0 0 11px;
+  color: #315d87;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: .09em;
+}
+
+.graduate-flow h3 {
+  margin: 0 0 11px;
+  color: var(--navy);
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+.graduate-flow p {
+  margin: 0;
+  color: #354e68;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.7;
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+
+.graduate-final-cta {
+  position: relative;
+  overflow: hidden;
+  min-height: 286px;
+  background: #052052;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.graduate-final-cta:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(5,32,82,.94) 0%,
+    rgba(5,32,82,.82) 44%,
+    rgba(5,32,82,.32) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.graduate-final-cta-inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: var(--max);
+  min-height: 286px;
+  margin: 0 auto;
+  padding: 44px 28px 46px;
+  text-align: center;
+}
+
+.graduate-final-cta h2 {
+  max-width: 980px;
+  margin: 0 0 16px;
+  font-family: var(--serif);
+  font-size: clamp(28px,2.3vw,34px);
+  line-height: 1.45;
+  letter-spacing: 0;
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+.graduate-final-cta p {
+  max-width: 760px;
+  margin: 0 0 22px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.9;
+  color: rgba(255,255,255,.92);
+  text-wrap: pretty;
+}
+
+.graduate-entry-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-width: 250px;
+  min-height: 58px;
+  padding: 15px 32px;
+  background: #fff;
+  color: #0b2f63;
+  border: 1px solid rgba(255,255,255,.82);
+  border-radius: 4px;
+  box-shadow: 0 8px 22px rgba(0,0,0,.18);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.graduate-entry-button:hover {
+  background: #f4f8fc;
+  transform: translateY(-1px);
+}
+
+.graduate-entry-button strong {
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+
+.graduate-entry-button span {
+  font-size: 14px;
+}
+
+.new-graduate-page .graduate-footer-nav {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2,auto);
+  grid-auto-flow: column;
+  gap: 12px 48px;
+  align-self: center;
+}
+
+.new-graduate-page .graduate-footer-nav a {
+  white-space: nowrap;
+}
+
+.mid-career-page .graduate-hero-bg {
+  object-position: 0% 0%;
+  transform: translate(18%,0%);
+}
+
+.mid-career-page .graduate-hero:before {
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,.98) 0%,
+    rgba(255,255,255,.91) 32%,
+    rgba(232,243,252,.54) 55%,
+    rgba(255,255,255,.08) 80%
+  );
+}
+
+.mid-career-page .graduate-message {
+  background: linear-gradient(
+    90deg,
+    #f3f7fb 0%,
+    #fff 58%
+  );
+}
+
+.mid-career-page .graduate-final-cta h2 {
+  max-width: 1080px;
+  white-space: nowrap;
+  font-size: clamp(27px,2.15vw,32px);
+}
+
+.mid-career-page .graduate-work-card:first-child img {
+  object-position: center;
+}
+
+.mid-career-page .graduate-work-card:nth-child(3) img {
+  object-position: center;
+}
+
+.mid-career-page .graduate-career-section {
+  background: linear-gradient(
+    180deg,
+    #f4f8fc 0%,
+    #fff 100%
+  );
+}
+
+@media(max-width:1280px) {
+  .graduate-work-card {
+    grid-template-columns: 140px minmax(0,1fr);
   }
-  .graduate-hero{min-height:630px}
-  .graduate-work-grid{grid-template-columns:1fr}
-  .graduate-work-card{grid-template-columns:230px minmax(0,1fr);min-height:180px}
-  .graduate-career,.graduate-stats,.graduate-flow{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .graduate-career:before,.graduate-career article:after,.graduate-flow article:after{display:none}
-  .graduate-career{gap:28px}
-  .graduate-flow{gap:22px}
-  .graduate-stats div:nth-child(2n){border-right:0}
-  .graduate-stats div:nth-child(-n+3){border-bottom:1px solid #d8e5ef}
 }
 
-@media(max-width:760px){
-  .new-graduate-page .site-header .header-inner{
-    padding-right:16px;
-  }
-  .graduate-header-entry{
-    display:none;
-  }
-  .graduate-mobile-entry{
-    position:fixed;
-    top:12px;
-    right:16px;
-    z-index:70;
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    min-width:96px;
-    min-height:42px;
-    padding:0 18px;
-    background:var(--navy);
-    color:#fff;
-    border-radius:4px;
-    box-shadow:0 8px 18px rgba(8,44,85,.16);
-    font-size:14px;
-    font-weight:800;
-    line-height:1;
-    letter-spacing:.06em;
-  }
-  .new-graduate-page .site-header .brand{
-    max-width:calc(100vw - 132px);
-    overflow:hidden;
-  }
-  .graduate-hero{min-height:560px;align-items:flex-end}
-  .new-graduate-page main > .section,
-  .new-graduate-page main > section.section{padding-top:56px;padding-bottom:60px}
-  .new-graduate-page .section-title{margin-bottom:28px;font-size:26px}
-  .graduate-hero-bg{object-position:60% center}
-  .graduate-hero:before{background:linear-gradient(0deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.82) 52%,rgba(255,255,255,.26) 100%)}
-  .graduate-hero-inner{padding:130px 24px 68px}
-  .graduate-hero h1{font-size:39px}
-  .graduate-hero-lead{font-size:13.5px;line-height:1.9}
-  .new-graduate-page main > section.graduate-message{padding-top:34px;padding-bottom:44px}
-  .graduate-message-grid{grid-template-columns:1fr;gap:26px}
-  .graduate-message-visual{clip-path:none}
-  .graduate-message-visual img{height:190px}
-  .graduate-message-body{padding:0}
-  .graduate-message-body h2{font-size:25px;line-height:1.55}
-  .graduate-work-card{grid-template-columns:1fr;min-height:0}
-  .graduate-work-card img{height:210px}
-  .graduate-career,.graduate-stats,.graduate-flow{grid-template-columns:1fr}
-  .graduate-career article{text-align:left;padding:0 0 28px;border-bottom:1px solid #d9e5ef}
-  .graduate-career span{margin:0 0 14px}
-  .graduate-stats div{border-right:0;border-bottom:1px solid #d8e5ef}
-  .graduate-stats div:last-child{border-bottom:0}
-  .graduate-outline,.graduate-outline tbody,.graduate-outline tr,.graduate-outline th,.graduate-outline td{display:block;width:100%}
-  .graduate-outline th{border-bottom:0}
-  .graduate-outline td{border-top:0}
-  .graduate-final-cta{min-height:auto}
-  .graduate-final-cta-inner{min-height:auto;padding:44px 24px 46px}
-  .graduate-final-cta h2{font-size:24px;line-height:1.6;margin-bottom:14px}
-  .graduate-final-cta p{margin-bottom:22px}
-  .graduate-entry-button{width:min(100%,320px);min-width:0;padding:14px 24px;font-size:14px}
-  .mid-career-page .graduate-final-cta h2{white-space:normal;font-size:24px}
-  .new-graduate-page .graduate-footer-nav{
-    grid-template-columns:1fr 1fr;
-    gap:10px 24px;
-  }
-  .new-graduate-page:not(.mid-career-page) .graduate-hero-bg{object-position:68% center;transform:none}
-  .mid-career-page .graduate-hero-bg{object-position:64% center;transform:none}
-}
 
-@media(max-width:520px){
-  .graduate-mobile-entry{
-    right:auto;
-    left:min(calc(100vw - 112px),278px);
+@media(max-width:1100px) {
+  .new-graduate-page .site-header .header-inner {
+    padding-right: 28px;
+  }
+
+  .graduate-hero {
+    min-height: 630px;
+  }
+
+  .graduate-work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .graduate-work-card {
+    grid-template-columns: 230px minmax(0,1fr);
+    min-height: 180px;
+  }
+
+  .graduate-career,.graduate-stats,.graduate-flow {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .graduate-career:before,.graduate-career article:after,.graduate-flow article:after {
+    display: none;
+  }
+
+  .graduate-career {
+    gap: 28px;
+  }
+
+  .graduate-flow {
+    gap: 22px;
+  }
+
+  .graduate-stats div:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .graduate-stats div:nth-child(-n+3) {
+    border-bottom: 1px solid #d8e5ef;
   }
 }
 
-.graduate-final-cta:before{z-index:1}
-.graduate-final-cta-inner{z-index:2}
+
+@media(max-width:760px) {
+  .new-graduate-page .site-header .header-inner {
+    padding-right: 16px;
+  }
+
+  .graduate-header-entry {
+    display: none;
+  }
+
+  .graduate-mobile-entry {
+    position: fixed;
+    top: 12px;
+    right: 16px;
+    z-index: 70;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 96px;
+    min-height: 42px;
+    padding: 0 18px;
+    background: var(--navy);
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 8px 18px rgba(8,44,85,.16);
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: .06em;
+  }
+
+  .new-graduate-page .site-header .brand {
+    max-width: calc(100vw - 132px);
+    overflow: hidden;
+  }
+
+  .graduate-hero {
+    min-height: 560px;
+    align-items: flex-end;
+  }
+
+  .new-graduate-page main > .section, .new-graduate-page main > section.section {
+    padding-top: 56px;
+    padding-bottom: 60px;
+  }
+
+  .new-graduate-page .section-title {
+    margin-bottom: 28px;
+    font-size: 26px;
+  }
+
+  .graduate-hero-bg {
+    object-position: 60% center;
+  }
+
+  .graduate-hero:before {
+    background: linear-gradient(
+      0deg,
+      rgba(255,255,255,.96) 0%,
+      rgba(255,255,255,.82) 52%,
+      rgba(255,255,255,.26) 100%
+    );
+  }
+
+  .graduate-hero-inner {
+    padding: 130px 24px 68px;
+  }
+
+  .graduate-hero h1 {
+    font-size: 39px;
+  }
+
+  .graduate-hero-lead {
+    font-size: 13.5px;
+    line-height: 1.9;
+  }
+
+  .new-graduate-page main > section.graduate-message {
+    padding-top: 34px;
+    padding-bottom: 44px;
+  }
+
+  .graduate-message-grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .graduate-message-visual {
+    clip-path: none;
+  }
+
+  .graduate-message-visual img {
+    height: 190px;
+  }
+
+  .graduate-message-body {
+    padding: 0;
+  }
+
+  .graduate-message-body h2 {
+    font-size: 25px;
+    line-height: 1.55;
+  }
+
+  .graduate-work-card {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .graduate-work-card img {
+    height: 210px;
+  }
+
+  .graduate-career,.graduate-stats,.graduate-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .graduate-career article {
+    text-align: left;
+    padding: 0 0 28px;
+    border-bottom: 1px solid #d9e5ef;
+  }
+
+  .graduate-career span {
+    margin: 0 0 14px;
+  }
+
+  .graduate-stats div {
+    border-right: 0;
+    border-bottom: 1px solid #d8e5ef;
+  }
+
+  .graduate-stats div:last-child {
+    border-bottom: 0;
+  }
+
+  .graduate-outline,.graduate-outline tbody,.graduate-outline tr,.graduate-outline th,.graduate-outline td {
+    display: block;
+    width: 100%;
+  }
+
+  .graduate-outline th {
+    border-bottom: 0;
+  }
+
+  .graduate-outline td {
+    border-top: 0;
+  }
+
+  .graduate-final-cta {
+    min-height: auto;
+  }
+
+  .graduate-final-cta-inner {
+    min-height: auto;
+    padding: 44px 24px 46px;
+  }
+
+  .graduate-final-cta h2 {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+
+  .graduate-final-cta p {
+    margin-bottom: 22px;
+  }
+
+  .graduate-entry-button {
+    width: min(100%,320px);
+    min-width: 0;
+    padding: 14px 24px;
+    font-size: 14px;
+  }
+
+  .mid-career-page .graduate-final-cta h2 {
+    white-space: normal;
+    font-size: 24px;
+  }
+
+  .new-graduate-page .graduate-footer-nav {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 24px;
+  }
+
+  .new-graduate-page:not(.mid-career-page) .graduate-hero-bg {
+    object-position: 68% center;
+    transform: none;
+  }
+
+  .mid-career-page .graduate-hero-bg {
+    object-position: 64% center;
+    transform: none;
+  }
+}
+
+
+@media(max-width:520px) {
+  .graduate-mobile-entry {
+    right: auto;
+    left: min(calc(100vw - 112px),278px);
+  }
+}
+
+
+.graduate-final-cta:before {
+  z-index: 1;
+}
+
+.graduate-final-cta-inner {
+  z-index: 2;
+}
