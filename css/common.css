@@ -518,6 +518,49 @@ a {
 
 
 @media(max-width:768px) {
+  html,body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  main {
+    overflow-x: hidden;
+  }
+
+  .inner {
+    padding: 0 20px;
+  }
+
+  .split-hero .copy {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .crumb {
+    line-height: 1.7;
+  }
+
+  .button {
+    min-width: 0;
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .outline {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .outline tbody,.outline thead,.outline tr {
+    width: 100%;
+  }
+
+  .cta.cta-wide, .cta-wide {
+    max-width: 100%;
+  }
+
   .cta.cta-wide {
     min-height: 230px;
     margin-top: 28px;

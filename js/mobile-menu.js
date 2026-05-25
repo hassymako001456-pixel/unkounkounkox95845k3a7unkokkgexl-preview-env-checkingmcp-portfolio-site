@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const mobileQuery = window.matchMedia("(max-width: 680px)");
+  const mobileQuery = window.matchMedia("(max-width: 768px)");
 
   document.querySelectorAll(".site-header").forEach((header, index) => {
     const nav = header.querySelector(".nav");

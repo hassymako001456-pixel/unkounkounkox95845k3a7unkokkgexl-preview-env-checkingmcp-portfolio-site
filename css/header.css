@@ -140,7 +140,7 @@
 }
 
 
-@media(max-width:680px) {
+@media(max-width:768px) {
   body.mobile-menu-open {
     overflow: hidden;
   }
@@ -158,16 +158,16 @@
     display: flex;
     align-items: center;
     min-width: 0;
-    padding-left: 12px;
-    padding-right: 72px;
+    padding-left: 16px;
+    padding-right: 84px;
   }
 
   .brand {
     min-width: 0;
     flex: 1 1 auto;
-    max-width: calc(100% - 72px);
-    gap: 6px;
-    font-size: 14px;
+    max-width: calc(100% - 84px);
+    gap: 8px;
+    font-size: 15px;
     line-height: 1.1;
     white-space: nowrap;
   }
@@ -189,8 +189,8 @@
   }
 
   .contact-link {
-    height: 30px;
-    min-width: 30px;
+    height: 34px;
+    min-width: 34px;
     padding: 0;
     border-radius: 9px;
     align-self: center;
@@ -211,7 +211,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 62px;
+    width: 74px;
     height: auto;
     margin-left: 0;
     flex: 0 0 auto;
@@ -219,8 +219,8 @@
   }
 
   .mobile-menu-toggle {
-    width: 30px;
-    height: 30px;
+    width: 34px;
+    height: 34px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -275,6 +275,8 @@
   .mobile-menu-panel {
     position: absolute;
     top: calc(100% + 10px);
+    max-height: calc(100vh - 92px);
+    overflow-y: auto;
     left: 12px;
     right: 12px;
     z-index: 80;
@@ -296,6 +298,9 @@
   }
 
   .mobile-menu-nav a {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
     padding: 15px 8px;
     color: #0b2f63;
     font-size: 15px;

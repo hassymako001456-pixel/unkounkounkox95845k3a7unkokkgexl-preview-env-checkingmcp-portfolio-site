@@ -291,47 +291,6 @@
   line-height: 1;
 }
 
-@media(min-width:1024px) {
-  .home-box {
-    width: min(660px,48vw);
-    padding-top: 14px;
-    padding-bottom: 16px;
-  }
-
-  .home-box:before {
-    inset: -28px -38px -24px -30px;
-    border-radius: 34px;
-  }
-
-  .home-links-section .home-link-number {
-    font-size: 38px;
-  }
-
-  .home-links-section .home-link-copy h2 {
-    margin-bottom: 14px;
-    font-size: 24px;
-    line-height: 1.34;
-  }
-
-  .home-links-section .home-link-copy p {
-    min-height: 3.9em;
-    margin: 6px 0 18px;
-    font-size: 14px;
-    line-height: 1.95;
-  }
-
-  .home-links-section .home-link-more {
-    gap: 16px;
-    font-size: 13px;
-  }
-
-  .home-link-more span {
-    width: 24px;
-    height: 24px;
-    font-size: 13px;
-  }
-}
-
 .home-links-section .home-link-copy h2 {
   grid-column: 2;
   margin: 0 0 20px;
@@ -411,6 +370,47 @@
 .home-link-media--triple img {
   height: 280px;
   min-height: 280px;
+}
+
+@media(min-width:1024px) {
+  .home-box {
+    width: min(660px,48vw);
+    padding-top: 14px;
+    padding-bottom: 16px;
+  }
+
+  .home-box:before {
+    inset: -28px -38px -24px -30px;
+    border-radius: 34px;
+  }
+
+  .home-links-section .home-link-number {
+    font-size: 38px;
+  }
+
+  .home-links-section .home-link-copy h2 {
+    margin-bottom: 14px;
+    font-size: 24px;
+    line-height: 1.34;
+  }
+
+  .home-links-section .home-link-copy p {
+    min-height: 3.9em;
+    margin: 6px 0 18px;
+    font-size: 14px;
+    line-height: 1.95;
+  }
+
+  .home-links-section .home-link-more {
+    gap: 16px;
+    font-size: 13px;
+  }
+
+  .home-link-more span {
+    width: 24px;
+    height: 24px;
+    font-size: 13px;
+  }
 }
 
 @media(min-width:1024px) {

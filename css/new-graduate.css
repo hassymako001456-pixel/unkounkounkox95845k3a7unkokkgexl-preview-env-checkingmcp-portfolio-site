@@ -948,3 +948,205 @@
 .graduate-final-cta-inner {
   z-index: 2;
 }
+
+@media (max-width: 768px) {
+  .new-graduate-page .site-header .header-inner {
+    min-height: 74px;
+    padding-right: 14px;
+  }
+
+  .new-graduate-page .site-header .brand {
+    max-width: calc(100vw - 128px);
+  }
+
+  .graduate-mobile-entry {
+    min-width: 92px;
+    min-height: 40px;
+    padding: 0 16px;
+    font-size: 13px;
+  }
+
+  .graduate-hero {
+    min-height: 510px;
+  }
+
+  .graduate-hero-inner {
+    padding: 120px 20px 56px;
+  }
+
+  .graduate-hero h1 {
+    font-size: clamp(32px, 12vw, 40px);
+    line-height: 1.04;
+  }
+
+  .graduate-hero-copy {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .graduate-hero-lead {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .new-graduate-page main > .section,
+  .new-graduate-page main > section.section {
+    padding-top: 42px;
+    padding-bottom: 48px;
+  }
+
+  .new-graduate-page main > section.graduate-message {
+    padding-top: 28px;
+    padding-bottom: 38px;
+  }
+
+  .new-graduate-page .section-title {
+    margin-bottom: 22px;
+    font-size: 24px;
+  }
+
+  .graduate-message-grid {
+    gap: 20px;
+  }
+
+  .graduate-message-visual img {
+    height: 210px;
+    object-position: center 28%;
+  }
+
+  .graduate-message-body h2 {
+    margin-bottom: 14px;
+    font-size: 23px;
+    line-height: 1.55;
+  }
+
+  .graduate-message-body p {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .graduate-work-grid {
+    gap: 18px;
+  }
+
+  .graduate-work-card {
+    border-radius: 0;
+  }
+
+  .graduate-work-card img {
+    height: 220px;
+  }
+
+  .graduate-work-card > div {
+    padding: 22px 18px 22px;
+  }
+
+  .graduate-work-card h3 {
+    margin-bottom: 10px;
+    font-size: 21px;
+    line-height: 1.5;
+  }
+
+  .graduate-work-card p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .graduate-career,
+  .graduate-stats,
+  .graduate-flow {
+    gap: 16px;
+  }
+
+  .graduate-career article {
+    padding-bottom: 22px;
+  }
+
+  .graduate-career h3,
+  .graduate-flow h3 {
+    font-size: 19px;
+  }
+
+  .graduate-career p,
+  .graduate-flow p {
+    font-size: 14px;
+    line-height: 1.8;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .graduate-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+  }
+
+  .graduate-stats div {
+    min-height: 104px;
+    padding: 18px 12px;
+    border-right: 1px solid #d8e5ef;
+    border-bottom: 1px solid #d8e5ef;
+  }
+
+  .graduate-stats div:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .graduate-stats div:last-child {
+    grid-column: 1 / -1;
+    border-bottom: 0;
+  }
+
+  .graduate-stats strong {
+    font-size: clamp(28px, 8vw, 38px);
+  }
+
+  .graduate-stats span {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .graduate-outline th,
+  .graduate-outline td {
+    padding: 14px 0;
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .graduate-flow article {
+    padding: 20px 18px 22px;
+  }
+
+  .graduate-flow span {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .graduate-final-cta-inner {
+    padding: 40px 20px 42px;
+  }
+
+  .graduate-final-cta h2 {
+    font-size: 23px;
+    line-height: 1.55;
+  }
+
+  .graduate-final-cta p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .graduate-entry-button {
+    width: 100%;
+    max-width: 340px;
+    min-height: 52px;
+    padding: 14px 18px;
+  }
+
+  .graduate-entry-button strong,
+  .graduate-entry-button span {
+    font-size: 14px;
+  }
+}

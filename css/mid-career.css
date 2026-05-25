@@ -1,3 +1,22 @@
 /* Mid-career page uses the shared graduate LP styles plus page-specific tweaks. */
 
 @import url("./new-graduate.css");
+
+@media (max-width: 768px) {
+  .mid-career-page .graduate-hero-bg {
+    object-position: 62% center;
+  }
+
+  .mid-career-page .graduate-message-visual img {
+    object-position: center 24%;
+  }
+
+  .mid-career-page .graduate-work-card:nth-child(2) img {
+    object-position: center 26%;
+  }
+
+  .mid-career-page .graduate-final-cta h2 {
+    font-size: 23px;
+    line-height: 1.55;
+  }
+}
