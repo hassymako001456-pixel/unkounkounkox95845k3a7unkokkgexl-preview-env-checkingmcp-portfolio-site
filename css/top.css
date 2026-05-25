@@ -86,7 +86,7 @@
   font-family: var(--top-font-display);
   font-size: var(--top-hero-title-size);
   line-height: var(--top-hero-title-line);
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: .01em;
 }
 
@@ -101,10 +101,10 @@
   max-width: min(34em,100%);
   margin: 0;
   color: #0d263e;
-  font-family: var(--top-font-ui);
-  font-size: var(--top-hero-copy-size);
+  font-family: var(--top-font-display);
+  font-size: 19px;
   line-height: var(--top-hero-copy-line);
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: .01em;
   overflow-wrap: anywhere;
 }
@@ -283,7 +283,7 @@
   grid-column: 1;
   grid-row: 1 / span 3;
   align-self: start;
-  padding-top: 2px;
+  padding-top: 11px;
   color: #8cb0d6;
   font-family: var(--serif);
   font-size: 31px;
@@ -334,11 +334,11 @@
 
 .home-links-section .home-link-copy h2 {
   grid-column: 2;
-  margin: 0 0 10px;
+  margin: 0 0 20px;
   color: #0a2848;
   font-family: var(--sans);
-  font-size: 20px;
-  line-height: 1.4;
+  font-size: 35px;
+  line-height: 1.8;
   font-weight: 800;
 }
 
@@ -346,15 +346,17 @@
   grid-column: 2;
   max-width: 30em;
   min-height: 3.6em;
-  margin: 4px 0 16px;
+  margin: 0px 0 10px;
   padding-top: 4px;
   color: #17344f;
   font-family: var(--sans);
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.9;
   font-weight: 700;
   overflow-wrap: normal;
   word-break: normal;
+  white-space: nowrap;
+  transform: translateX(-30px);
 }
 
 .home-links-section .home-link-more {
@@ -366,9 +368,10 @@
   align-self: start;
   color: #062f5f;
   font-family: var(--sans);
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.5;
   font-weight: 800;
+  transform: translateX(180px);
 }
 
 .home-link-more span {

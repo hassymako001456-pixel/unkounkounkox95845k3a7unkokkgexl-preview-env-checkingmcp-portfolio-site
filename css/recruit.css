@@ -71,7 +71,7 @@ body.recruit-page .split-hero .page-lead {
 
 body.recruit-page main > section > .section > .inner {
   width: min(calc(100% - (var(--page-shell-gutter) * 2)),var(--page-shell-wide));
-  max-width: none;
+  max-width: 1150px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0;
@@ -106,11 +106,11 @@ body.recruit-page .section-title:after {
 }
 
 body.recruit-page .recruit-cards {
-  max-width: 1320px;
+  max-width: 1100px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2,minmax(0,1fr));
-  gap: 24px;
+  gap: 30px;
 }
 
 body.recruit-page .recruit-card {
@@ -178,7 +178,7 @@ body.recruit-page .recruit-card img {
 }
 
 body.recruit-page .persona-grid {
-  max-width: 1320px;
+  max-width: 1150px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3,minmax(0,1fr));
@@ -316,15 +316,15 @@ body.recruit-page .benefits .recruit-line-icon {
 }
 
 body.recruit-page .staff {
-  max-width: 1320px;
+  max-width: 1220px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3,minmax(0,1fr));
-  gap: 24px;
+  gap: 30px;
 }
 
 body.recruit-page .staff-card {
-  min-height: 320px;
+  min-height: 100px;
   display: grid;
   grid-template-columns: 40% 60%;
   overflow: hidden;
@@ -337,7 +337,7 @@ body.recruit-page .staff-card {
 body.recruit-page .staff-card img {
   width: 100%;
   height: 100%;
-  min-height: 320px;
+  min-height: 300px;
   object-fit: cover;
   filter: saturate(.96) contrast(.98);
 }
@@ -363,12 +363,12 @@ body.recruit-page .staff-card>div {
 }
 
 body.recruit-page .staff-card h3 {
-  margin: 0 0 16px;
+  margin: 0 0 10px;
   display: flex;
   align-items: baseline;
-  gap: 8px;
+  gap: 20px;
   color: var(--navy);
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.32;
   font-weight: 800;
 }
@@ -385,16 +385,16 @@ body.recruit-page .staff-card .staff-age {
 }
 
 body.recruit-page .staff-card .staff-join {
-  margin: 0 0 24px;
+  margin: 0 0 10px;
   color: #4b6177;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.55;
   font-weight: 800;
 }
 
 body.recruit-page .staff-card .staff-dept {
   min-height: 0;
-  margin: 0 0 24px;
+  margin: 0 0 15px;
   color: #18324d;
   font-size: 15px;
   line-height: 1.55;
@@ -405,7 +405,7 @@ body.recruit-page .staff-card p:last-of-type {
   max-width: none;
   margin: 0;
   color: #30485f;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.6;
   font-weight: 700;
 }
@@ -413,9 +413,39 @@ body.recruit-page .staff-card p:last-of-type {
 body.recruit-page .staff-card:first-child p:last-of-type {
   max-width: none;
   white-space: normal;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.6;
   font-weight: 700;
+}
+
+/* 社員紹介：入社年と部署名の間隔調整（PC） */
+body.recruit-page .staff-card .staff-join {
+  margin-bottom: -50px;
+}
+
+body.recruit-page .staff-card .staff-dept {
+  margin-top: -30px;
+}
+
+/* 社員紹介セクション：PC表示の上下余白調整 */
+body.recruit-page .section.u-pt-0:has(.staff) {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* 見出し「社員紹介」とカードの間隔 */
+body.recruit-page .section.u-pt-0:has(.staff) .section-title {
+  margin-bottom: 32px;
+}
+
+/* 社員紹介カード自体の高さを少し抑える */
+body.recruit-page .staff-card {
+  min-height: 150px;
+}
+
+/* 画像の高さがセクション高さを押し広げているので少し下げる */
+body.recruit-page .staff-card img {
+  min-height: 100px;
 }
 
 @media(max-width:1180px) {

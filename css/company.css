@@ -1,424 +1,81 @@
-/* company.css - migrated from inline CSS. Keep visual parity first. */
+/* ==============================
+   Base / 企業情報ページ共通
+============================== */
 
-
-.president {
-  display: grid;
-  grid-template-columns: 360px 1fr;
-  gap: 54px;
-  align-items: center;
+body.company-page {
+  overflow-x: hidden;
 }
 
-.president img {
-  height: 390px;
-  width: 100%;
-  object-fit: cover;
+body.company-page .mobile-only {
+  display: none;
 }
 
-.president h2,.company-block h2 {
-  font-family: var(--serif);
-  color: var(--navy);
-  font-size: 26px;
-  margin: 0 0 14px;
+body.company-page .company-overview-section .inner,
+body.company-page .company-thinking {
+  width: min(calc(100% - (var(--page-shell-gutter) * 2)),var(--page-shell-wide));
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.president h3 {
-  font-family: var(--serif);
-  color: var(--navy);
-  font-size: 27px;
-  line-height: 1.55;
-  margin: 0 0 18px;
+body.company-page .heading-chunk,
+body.company-page .text-chunk {
+  display: inline;
 }
 
-.president p {
-  font-size: 14px;
-  margin: 0 0 12px;
+body.company-page .copy-chunk {
+  display: inline-block;
+  white-space: nowrap;
 }
 
-.signature {
-  font-family: var(--serif);
-  font-size: 32px;
-  letter-spacing: .08em;
-}
+/* ==============================
+   PC表示
+============================== */
 
-.philosophy {
-  border: 1px solid #cfdbe6;
-  padding: 26px;
-  background: linear-gradient(
-    90deg,
-    #fff,
-    #f8fbff
-  );
-  display: grid;
-  grid-template-columns: 1fr 330px 1fr;
-  gap: 28px;
-  align-items: center;
-}
-
-.philosophy-img img {
-  width: 100%;
-  height: auto;
-}
-
-.num-list {
-  padding: 0;
-  margin: 18px 0 0;
-  display: grid;
-  gap: 12px;
-  list-style: none;
-}
-
-.num-list li {
-  display: grid;
-  grid-template-columns: 28px 1fr;
-  gap: 12px;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.num-list span {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  background: var(--navy);
-  color: #fff;
-}
-
-.bubble-list {
-  display: grid;
-  gap: 13px;
-}
-
-.bubble {
-  position: relative;
-  padding: 14px 18px;
-  background: #fff;
-  border: 1px solid #d5e0eb;
-  border-radius: 4px;
-  font-size: 14px;
-  line-height: 1.8;
-  font-weight: 700;
-}
-
-.timeline {
-  display: grid;
-  grid-template-columns: repeat(7,1fr);
-  position: relative;
-  margin-top: 28px;
-}
-
-.timeline:before {
-  content: "";
-  position: absolute;
-  top: 9px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: var(--navy);
-}
-
-.time-item {
-  text-align: center;
-  position: relative;
-  padding-top: 24px;
-  font-size: 12px;
-  font-weight: 800;
-}
-
-.time-item:before {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 50%;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--navy);
-  transform: translateX(-50%);
-}
-
-.time-item strong {
-  display: block;
-  color: var(--navy);
-  font-family: var(--serif);
-  font-size: 16px;
-}
-
-.president h3 {
-  font-size: clamp(24px,2.2vw,31px);
-  line-height: 1.55;
-  letter-spacing: 0;
-}
-
-.president {
-  gap: 48px;
-}
-
-.philosophy {
-  grid-template-columns: minmax(270px,.95fr) minmax(300px,360px) minmax(330px,1.15fr);
-  gap: 34px;
-  align-items: center;
-  padding: 34px;
-  background: linear-gradient(
-    90deg,
-    #fff 0%,
-    #fbfdff 58%,
-    #f7fbff 100%
-  );
-}
-
-.company-block h2,.president h2 {
-  font-size: clamp(25px,2.1vw,31px);
-  line-height: 1.35;
-}
-
-.company-block .page-lead {
-  margin: 0 0 18px;
-  max-width: 380px;
-}
-
-.company-block h3 {
-  font-size: clamp(19px,1.7vw,23px)!important;
-  line-height: 1.65!important;
-  margin: 0 0 18px!important;
-  letter-spacing: 0;
-}
-
-.num-list {
-  gap: 14px;
-  margin-top: 20px;
-}
-
-.num-list li {
-  font-size: 14px;
-  line-height: 1.85;
-  font-weight: 600;
-  grid-template-columns: 30px 1fr;
-  align-items: start;
-}
-
-.num-list span {
-  margin-top: 2px;
-}
-
-.philosophy-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.philosophy-img img {
-  max-width: 360px;
-  margin: auto;
-}
-
-.philosophy>div:last-child h2 {
-  font-size: clamp(24px,2.1vw,30px);
-  line-height: 1.35;
-  margin: 0 0 22px;
-}
-
-.bubble-list {
-  gap: 16px;
-}
-
-.bubble {
-  font-size: 14px;
-  line-height: 1.85;
-  font-weight: 600;
-  padding: 18px 20px;
-  letter-spacing: 0;
-  color: #18324d;
-}
-
-.company-intro-text {
-  max-width: 560px!important;
-  font-size: 15px!important;
-  line-height: 2.05!important;
-  font-weight: 600!important;
-  letter-spacing: 0!important;
-}
-
-.president-lead {
-  font-size: clamp(24px,2.25vw,30px)!important;
-  line-height: 1.58!important;
-  font-weight: 700!important;
-  letter-spacing: 0!important;
-  margin: 0 0 22px!important;
-}
-
-.president-body {
-  font-size: 14.5px!important;
-  line-height: 2.05!important;
-  font-weight: 500!important;
-  letter-spacing: 0!important;
-  max-width: 720px;
-}
-
-.president .signature {
-  margin-top: 18px;
-}
-
-.president div p:not(.signature) {
-  max-width: 720px;
-}
-
-.split-hero .lead.company-intro-text {
-  max-width: 540px!important;
-  font-size: 14.5px!important;
-  line-height: 2!important;
-  font-weight: 600!important;
-  letter-spacing: 0!important;
-  color: #16304a!important;
-}
-
-.president .president-lead {
-  font-size: clamp(22px,2.05vw,28px)!important;
-  line-height: 1.62!important;
-  font-weight: 700!important;
-  letter-spacing: 0!important;
-  margin: 0 0 20px!important;
-  color: var(--navy)!important;
-}
-
-.president .president-body {
-  font-size: 14px!important;
-  line-height: 2.05!important;
-  font-weight: 500!important;
-  letter-spacing: 0!important;
-  max-width: 760px!important;
-  margin: 0 0 14px!important;
-  color: #18324d!important;
-}
-
-.president div {
-  min-width: 0;
-}
-
-.president h2 {
-  margin-bottom: 16px!important;
-}
-
-@media(max-width:1000px) {
-  .timeline {
-    grid-template-columns: repeat(2,1fr);
-    gap: 18px;
-  }
-
-  .timeline:before {
-    display: none;
-  }
-}
-
-
-@media(max-width:980px) {
-  .philosophy {
-    grid-template-columns: 1fr;
-    padding: 26px;
-  }
-
-  .philosophy-img img {
-    max-width: 420px;
-  }
-
-  .president {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-@media(max-width:640px) {
-  .philosophy {
-    padding: 22px;
-  }
-
-  .bubble {
-    font-size: 13.5px;
-  }
-
-  .num-list li {
-    font-size: 13.5px;
-  }
-
-  .president h3 {
-    font-size: 23px;
-  }
-}
-
-
-@media(max-width:720px) {
-  .company-intro-text {
-    font-size: 14px!important;
-    line-height: 1.95!important;
-  }
-
-  .president-lead {
-    font-size: 22px!important;
-  }
-
-  .president-body {
-    font-size: 14px!important;
-    line-height: 1.95!important;
-  }
-}
-
-
-@media(max-width:760px) {
-  .split-hero .lead.company-intro-text {
-    font-size: 14px!important;
-    line-height: 1.9!important;
-  }
-
-  .president .president-lead {
-    font-size: 21px!important;
-  }
-
-  .president .president-body {
-    font-size: 13.5px!important;
-    line-height: 1.9!important;
-  }
-}
-
-
-/* Company page corporate refinement */
-
-
-.company-page .company-hero {
+/* 下層ページヒーロー */
+body.company-page .company-hero {
   min-height: 500px;
   background: #fff;
 }
 
-.company-page .company-hero .hero-bg {
-  inset: 0 0 0 36%;
-  width: 64%;
+body.company-page .company-hero .hero-bg {
+  inset: 0;
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center;
-  filter: saturate(.95) contrast(.98);
+  object-position: center bottom;
+  filter: saturate(.96) contrast(.98);
 }
 
-.company-page .company-hero:before {
+body.company-page .company-hero:before {
   background: linear-gradient(
     90deg,
     #fff 0%,
-    rgba(255,255,255,.96) 31%,
-    rgba(255,255,255,.78) 43%,
-    rgba(238,248,255,.2) 64%,
+    rgba(255,255,255,.98) 24%,
+    rgba(255,255,255,.86) 37%,
+    rgba(255,255,255,.48) 51%,
+    rgba(255,255,255,.08) 72%,
     rgba(255,255,255,0) 100%
   );
 }
 
-.company-page .company-hero .copy {
+body.company-page .company-hero .copy {
   max-width: 1180px;
-  padding: 56px 40px 70px;
+  padding-top: 52px;
+  padding-bottom: 68px;
 }
 
-.company-page .company-hero .crumb {
+body.company-page .company-hero .copy > * {
+  max-width: 520px;
+}
+
+body.company-page .company-hero .crumb {
   margin-bottom: 22px;
 }
 
-.company-page .company-hero h1 {
+body.company-page .company-hero h1 {
   margin-bottom: 8px;
   font-size: clamp(44px,3.9vw,58px);
   line-height: 1.15;
@@ -426,188 +83,222 @@
   letter-spacing: .01em;
 }
 
-.company-page .company-hero .en {
+body.company-page .company-hero .en {
   margin-bottom: 28px;
   font-size: 18px;
   font-weight: 800;
 }
 
-.company-page .company-hero .lead {
+body.company-page .company-hero .lead {
   max-width: 520px;
-  margin: 0;
-  color: #16324d;
-  font-size: 15px;
-  line-height: 2.05;
+  margin: 0 0 16px;
+  color: #18324d;
+  font-size: 14.5px;
+  line-height: 2;
   font-weight: 800;
-  text-wrap: pretty;
+  letter-spacing: 0;
 }
 
-.company-page .company-president-section {
+/* 代表挨拶 */
+body.company-page .company-president-section {
   padding-top: 78px;
   padding-bottom: 72px;
 }
 
-.company-page .president {
-  max-width: 1160px;
+body.company-page .president {
+  display: grid;
   grid-template-columns: minmax(330px,390px) minmax(0,1fr);
   gap: 62px;
   align-items: center;
+  max-width: 1160px;
 }
 
-.company-page .president img {
+body.company-page .president img {
+  width: 100%;
   height: 420px;
+  object-fit: cover;
   border-radius: 0;
   box-shadow: 0 16px 34px rgba(8,44,85,.08);
 }
 
-.company-page .president h2 {
-  font-size: clamp(25px,2vw,30px);
-  margin-bottom: 18px;
-}
-
-.company-page .president .president-lead {
-  max-width: 780px;
-  font-size: clamp(24px,2.15vw,31px)!important;
-  line-height: 1.62!important;
-  margin-bottom: 24px!important;
-}
-
-.company-page .president .president-body {
-  max-width: 720px!important;
-  font-size: 14.5px!important;
-  line-height: 2.08!important;
-  margin-bottom: 10px!important;
-}
-
-.company-page .president .signature {
-  font-size: 20px;
-  letter-spacing: .04em;
-  margin-top: 24px;
-}
-
-.company-page .company-philosophy-section {
-  padding-top: 52px;
-  padding-bottom: 72px;
-}
-
-.company-page .philosophy {
-  max-width: 1380px;
-  border-color: #d8e4ee;
-  padding: 42px;
-  grid-template-columns: minmax(300px,.95fr) minmax(320px,390px) minmax(340px,1.05fr);
-  gap: 46px;
-  background: linear-gradient(
-    90deg,
-    #fff 0%,
-    #fbfdff 56%,
-    #f7fbff 100%
-  );
-}
-
-.company-page .company-block .page-lead {
-  max-width: 420px;
-  font-size: 14.5px;
-  line-height: 2.05;
-  margin-bottom: 24px;
-}
-
-.company-page .company-block h3 {
-  margin-bottom: 24px!important;
-  line-height: 1.7!important;
-}
-
-.company-page .num-list {
-  gap: 18px;
-}
-
-.company-page .num-list li {
-  font-size: 14px;
-  line-height: 1.9;
-  font-weight: 700;
-}
-
-.company-page .philosophy-img img {
-  max-width: 390px;
-  filter: drop-shadow(0 18px 24px rgba(8,44,85,.08));
-}
-
-.company-page .philosophy>div:last-child h2 {
-  text-align: center;
-  margin-bottom: 24px;
-}
-
-.company-page .bubble-list {
-  gap: 18px;
-}
-
-.company-page .bubble {
-  padding: 20px 22px;
-  font-size: 14.2px;
-  line-height: 1.9;
-  font-weight: 700;
-  background: rgba(255,255,255,.92);
-}
-
-.company-page .company-overview-section .inner {
-  max-width: 1360px;
-}
-
-.company-page .outline th,.company-page .outline td {
-  padding: 13px 20px;
-  line-height: 1.8;
-}
-
-.company-page .company-overview-section h2 {
+body.company-page .president h2 {
+  margin: 0 0 18px;
+  color: var(--navy);
+  font-family: var(--serif);
   font-size: clamp(25px,2vw,30px);
   line-height: 1.35;
-  margin-bottom: 20px;
 }
 
-.company-page .timeline {
+body.company-page .president .president-lead {
+  max-width: 760px;
+  margin: 0 0 28px;
+  color: var(--navy);
+  font-family: var(--serif);
+  font-size: clamp(25px,2.05vw,30px);
+  font-weight: 700;
+  line-height: 1.62;
+  letter-spacing: 0;
+  text-wrap: balance;
+}
+
+body.company-page .president .president-body {
+  max-width: 750px;
+  margin: 0 0 14px;
+  color: #18324d;
+  font-size: 14.5px;
+  font-weight: 500;
+  line-height: 2.12;
+  letter-spacing: 0;
+}
+
+body.company-page .president .signature-block {
+  margin-top: 32px;
+}
+
+body.company-page .president .signature-title {
+  margin: 0 0 6px;
+  color: #52677d;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: .08em;
+}
+
+body.company-page .president .signature {
+  margin: 0;
+  color: var(--navy);
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.55;
+  letter-spacing: .06em;
+}
+
+/* 会社概要 */
+body.company-page .company-overview-section {
+  padding-top: 64px;
+  padding-bottom: 86px;
+}
+
+body.company-page .company-overview-section h2 {
+  margin-bottom: 20px;
+  font-size: clamp(25px,2vw,30px);
+  line-height: 1.35;
+}
+
+body.company-page .company-overview-section .u-mt-34 {
+  margin-top: 0;
+}
+
+body.company-page .company-overview-section .outline {
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 56px;
+  border: 1px solid #d3deea;
+  background: #fff;
+}
+
+body.company-page .company-overview-section .outline th,
+body.company-page .company-overview-section .outline td {
+  vertical-align: middle;
+  border: 0;
+  border-right: 1px solid #d3deea;
+  border-bottom: 1px solid #d3deea;
+}
+
+body.company-page .company-overview-section .outline tr:last-child th,
+body.company-page .company-overview-section .outline tr:last-child td {
+  border-bottom: 0;
+}
+
+body.company-page .company-overview-section .outline th:nth-child(1),
+body.company-page .company-overview-section .outline th:nth-child(3) {
+  width: 11.5%;
+  padding: 20px 28px 20px 30px;
+  color: var(--navy);
+  background: #f5f8fb;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .02em;
+  white-space: nowrap;
+}
+
+body.company-page .company-overview-section .outline td:nth-child(2),
+body.company-page .company-overview-section .outline td:nth-child(4) {
+  width: 38.5%;
+  padding: 20px 30px;
+  color: #17314c;
+  font-size: 14.5px;
+  font-weight: 700;
+  line-height: 1.85;
+}
+
+body.company-page .company-overview-section .outline th:nth-child(3) {
+  border-left: 2px solid #c7d6e5;
+}
+
+body.company-page .company-overview-section .outline td:last-child {
+  border-right: 0;
+}
+
+/* 沿革 */
+body.company-page .timeline {
+  display: grid;
+  position: relative;
   grid-template-columns: repeat(7,minmax(120px,1fr));
   gap: 0;
-  margin-top: 34px;
+  margin-top: 38px;
+  margin-bottom: 4px;
 }
 
-.company-page .time-item {
-  font-size: 13px;
-  line-height: 1.8;
+body.company-page .timeline:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--navy);
+}
+
+body.company-page .time-item {
+  position: relative;
   padding: 30px 12px 0;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.8;
 }
 
-.company-page .time-item strong {
-  font-size: 22px;
-  margin-bottom: 8px;
-}
-
-.company-page .time-item:before {
+body.company-page .time-item:before {
+  content: "";
+  position: absolute;
   top: 4px;
+  left: 50%;
   width: 14px;
   height: 14px;
+  border-radius: 50%;
+  background: var(--navy);
+  transform: translateX(-50%);
 }
 
-.company-page .timeline:before {
-  top: 10px;
-  height: 3px;
+body.company-page .time-item strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--navy);
+  font-family: var(--serif);
+  font-size: 22px;
 }
 
-.company-page .company-overview-section .inner, .company-page .company-thinking {
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 1360px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 28px;
-  padding-right: 28px;
-}
-
-.company-page .company-thinking-section {
+/* 企業理念 */
+body.company-page .company-thinking-section {
   padding: 64px 0 84px;
   background: #fff;
   border-top: 1px solid #dbe6ef;
 }
 
-.company-page .company-thinking-heading {
+body.company-page .company-thinking-heading {
   margin: 0 0 18px;
   color: var(--navy);
   font-family: var(--serif);
@@ -617,30 +308,31 @@
   letter-spacing: 0;
 }
 
-.company-page .company-thinking-heading+.thinking-row {
+body.company-page .company-thinking-heading + .thinking-row {
   padding-top: 38px;
 }
 
-.company-page .thinking-row {
+body.company-page .thinking-row {
   display: grid;
   grid-template-columns: 170px minmax(0,1fr);
-  gap: 46px;
-  padding: 42px 0;
+  gap: 54px;
+  padding-top: 46px;
+  padding-bottom: 50px;
   border-bottom: 1px solid #dbe6ef;
 }
 
-.company-page .thinking-row:last-child {
-  border-bottom: 0;
+body.company-page .thinking-row:last-child {
   padding-bottom: 0;
+  border-bottom: 0;
 }
 
-.company-page .thinking-label {
+body.company-page .thinking-label {
   padding-right: 28px;
   border-right: 1px solid #dbe6ef;
   color: var(--navy);
 }
 
-.company-page .thinking-number {
+body.company-page .thinking-number {
   display: block;
   color: #b8c8dc;
   font-family: var(--serif);
@@ -649,7 +341,7 @@
   line-height: 1;
 }
 
-.company-page .thinking-en {
+body.company-page .thinking-en {
   display: block;
   margin-top: 10px;
   color: #8fa5bd;
@@ -659,7 +351,7 @@
   letter-spacing: .08em;
 }
 
-.company-page .thinking-label h3 {
+body.company-page .thinking-label h3 {
   margin: 4px 0 0;
   color: var(--navy);
   font-family: var(--serif);
@@ -668,7 +360,7 @@
   line-height: 1.45;
 }
 
-.company-page .thinking-label::after {
+body.company-page .thinking-label::after {
   content: "";
   display: block;
   width: 34px;
@@ -677,256 +369,512 @@
   background: var(--navy);
 }
 
-.company-page .thinking-body h4 {
+body.company-page .thinking-body h4 {
+  max-width: none;
   margin: 0 0 16px;
   color: var(--navy);
   font-family: var(--serif);
-  font-size: clamp(25px,2.2vw,34px);
+  font-size: clamp(27px,2.05vw,34px);
   font-weight: 600;
-  line-height: 1.62;
+  line-height: 1.48;
   letter-spacing: 0;
 }
 
-.company-page .thinking-body>p {
+body.company-page .thinking-body > p {
+  max-width: none;
   margin: 0;
   color: #1a3854;
   font-size: 14px;
   font-weight: 700;
-  line-height: 2;
+  line-height: 1.85;
   letter-spacing: 0;
 }
 
-.company-page .thinking-body>p+p {
-  margin-top: 10px;
+body.company-page .thinking-row-philosophy .thinking-body > p,
+body.company-page .thinking-row-vision .thinking-body > p,
+body.company-page .thinking-row-policy .thinking-body > p {
+  max-width: 680px;
 }
 
-.company-page .thinking-values, .company-page .vision-grid {
+body.company-page .thinking-body > p + p {
+  margin-top: 6px;
+}
+
+body.company-page .thinking-values,
+body.company-page .vision-grid,
+body.company-page .policy-grid {
   display: grid;
+  align-items: stretch;
+  gap: 0;
+  column-gap: 0;
+  margin-top: 40px;
+}
+
+body.company-page .thinking-values {
   grid-template-columns: repeat(3,minmax(0,1fr));
-  gap: 0;
-  margin-top: 38px;
 }
 
-.company-page .policy-grid {
-  display: grid;
+body.company-page .vision-grid,
+body.company-page .policy-grid {
   grid-template-columns: repeat(4,minmax(0,1fr));
-  gap: 0;
-  margin-top: 42px;
 }
 
-.company-page .thinking-value-card, .company-page .vision-card, .company-page .policy-card {
-  text-align: center;
-  padding: 0 24px;
-  border-right: 1px solid #dbe6ef;
+body.company-page .thinking-value-card,
+body.company-page .vision-card,
+body.company-page .policy-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   min-width: 0;
+  min-height: 100%;
+  padding: 0 28px;
+  border-right: 1px solid #dbe6ef;
+  text-align: center;
 }
 
-.company-page .thinking-value-card:last-child, .company-page .vision-card:last-child, .company-page .policy-card:last-child {
+body.company-page .vision-card,
+body.company-page .policy-card {
+  padding-right: 18px;
+  padding-left: 18px;
+}
+
+body.company-page .thinking-value-card:last-child,
+body.company-page .vision-card:last-child,
+body.company-page .policy-card:last-child {
   border-right: 0;
 }
 
-.company-page .thinking-card-image {
+body.company-page .thinking-card-image {
   width: 100%;
-  height: 148px;
+  height: 132px;
   margin: 0 0 18px;
   object-fit: cover;
   object-position: center;
-  border-radius: 0;
-  filter: saturate(.96) contrast(.98);
+  background: #eef4f9;
+  filter: saturate(.92) contrast(.98);
 }
 
-.company-page .thinking-row-vision .thinking-card-image {
-  height: 152px;
+body.company-page .thinking-row-philosophy .thinking-value-card:first-child .thinking-card-image,
+body.company-page .thinking-row-vision .vision-card:first-child .thinking-card-image {
+  object-position: center 54%;
 }
 
-.company-page .thinking-value-card h5, .company-page .vision-card h5, .company-page .policy-card h5 {
+body.company-page .thinking-row-policy .policy-card:first-child .thinking-card-image {
+  object-position: 82% 52%;
+}
+
+body.company-page .thinking-value-card h5,
+body.company-page .vision-card h5,
+body.company-page .policy-card h5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.45em;
   margin: 0 0 10px;
   color: var(--navy);
   font-family: var(--serif);
-  font-size: 18px;
+  font-size: 19.5px;
   font-weight: 700;
-  line-height: 1.55;
+  line-height: 1.32;
+  text-align: center;
   letter-spacing: 0;
 }
 
-.company-page .thinking-value-card p, .company-page .vision-card p, .company-page .policy-card p {
+body.company-page .thinking-value-card p,
+body.company-page .vision-card p,
+body.company-page .policy-card p {
+  display: block;
+  width: 100%;
+  max-width: 21em;
+  min-height: 4.25em;
   margin: 0 auto;
-  max-width: 18em;
-  color: #233f5a;
+  color: #18324d;
   font-size: 12.8px;
   font-weight: 700;
   line-height: 1.88;
+  text-align: center;
   letter-spacing: 0;
 }
 
-@media(max-width:1000px) {
-  .company-page .company-hero {
-    min-height: 430px;
+body.company-page .vision-card p {
+  max-width: 18.5em;
+}
+
+body.company-page .thinking-row-policy .policy-card p {
+  max-width: 20em;
+}
+
+/* ==============================
+   Tablet / 中間幅
+============================== */
+
+@media (max-width: 1000px) {
+  body.company-page .company-hero .hero-bg {
+    object-position: center bottom;
   }
 
-  .company-page .company-hero .hero-bg {
-    inset: 0;
-    width: 100%;
-    object-position: center;
+  body.company-page .company-hero:before {
+    background: linear-gradient(
+      90deg,
+      rgba(255,255,255,.92) 0%,
+      rgba(255,255,255,.8) 48%,
+      rgba(255,255,255,.36) 100%
+    );
   }
 
-  .company-page .company-hero:before {
-    background: rgba(255,255,255,.78);
-  }
-
-  .company-page .president {
+  body.company-page .president {
     grid-template-columns: 1fr;
     gap: 34px;
   }
 
-  .company-page .president img {
+  body.company-page .president img {
     height: auto;
     max-height: 520px;
   }
 
-  .company-page .philosophy {
-    grid-template-columns: 1fr;
-    gap: 30px;
+  body.company-page .company-overview-section {
+    padding-bottom: 74px;
   }
 
-  .company-page .timeline {
+  body.company-page .company-overview-section .outline {
+    margin-bottom: 46px;
+  }
+
+  body.company-page .timeline {
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
   }
 
-  .company-page .timeline:before {
+  body.company-page .timeline:before {
     display: none;
   }
 
-  .company-page .time-item {
+  body.company-page .time-item {
     padding: 22px 18px;
     border-top: 1px solid #d8e4ee;
     text-align: left;
   }
 
-  .company-page .time-item:before {
-    left: 0;
+  body.company-page .time-item:before {
     top: 28px;
+    left: 0;
     transform: none;
   }
 
-  .company-page .thinking-row {
+  body.company-page .company-thinking-section {
+    padding-top: 54px;
+  }
+
+  body.company-page .thinking-row {
     grid-template-columns: 1fr;
     gap: 28px;
   }
 
-  .company-page .thinking-label {
+  body.company-page .thinking-label {
     padding-right: 0;
     border-right: 0;
   }
 
-  .company-page .thinking-values, .company-page .vision-grid {
-    grid-template-columns: repeat(2,minmax(0,1fr));
-  }
-
-  .company-page .policy-grid {
+  body.company-page .thinking-values,
+  body.company-page .vision-grid {
     grid-template-columns: repeat(2,minmax(0,1fr));
     row-gap: 34px;
   }
 
-  .company-page .policy-card:nth-child(2) {
+  body.company-page .policy-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    row-gap: 34px;
+  }
+
+  body.company-page .thinking-value-card,
+  body.company-page .vision-card,
+  body.company-page .policy-card {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  body.company-page .thinking-value-card:nth-child(2),
+  body.company-page .vision-card:nth-child(2),
+  body.company-page .policy-card:nth-child(2) {
     border-right: 0;
+  }
+
+  body.company-page .thinking-value-card:nth-child(-n+2),
+  body.company-page .vision-card:nth-child(-n+2),
+  body.company-page .policy-card:nth-child(-n+2) {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dbe6ef;
   }
 }
 
+@media (max-width: 900px) {
+  body.company-page .company-overview-section .outline {
+    display: block;
+    border: 1px solid #d3deea;
+  }
 
-@media(max-width:680px) {
-  .company-page .company-hero {
+  body.company-page .company-overview-section .outline tbody,
+  body.company-page .company-overview-section .outline tr,
+  body.company-page .company-overview-section .outline th,
+  body.company-page .company-overview-section .outline td {
+    display: block;
+    width: 100%;
+  }
+
+  body.company-page .company-overview-section .outline tr {
+    border-bottom: 1px solid #d3deea;
+  }
+
+  body.company-page .company-overview-section .outline tr:last-child {
+    border-bottom: 0;
+  }
+
+  body.company-page .company-overview-section .outline th,
+  body.company-page .company-overview-section .outline td {
+    border-right: 0;
+    border-bottom: 0;
+  }
+
+  body.company-page .company-overview-section .outline th:nth-child(1),
+  body.company-page .company-overview-section .outline th:nth-child(3) {
+    border-left: 0;
+    padding: 14px 18px 8px;
+  }
+
+  body.company-page .company-overview-section .outline td:nth-child(2),
+  body.company-page .company-overview-section .outline td:nth-child(4) {
+    padding: 0 18px 16px;
+  }
+}
+
+/* ==============================
+   SP表示
+============================== */
+
+@media (max-width: 760px) {
+  body.company-page .company-thinking-section {
+    overflow-x: hidden;
+  }
+
+  body.company-page .company-thinking {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  body.company-page .thinking-row,
+  body.company-page .thinking-label,
+  body.company-page .thinking-values,
+  body.company-page .vision-grid,
+  body.company-page .policy-grid,
+  body.company-page .thinking-value-card,
+  body.company-page .vision-card,
+  body.company-page .policy-card,
+  body.company-page .thinking-body {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  body.company-page .thinking-body h4,
+  body.company-page .thinking-body > p {
+    width: calc(100vw - 56px);
+    max-width: calc(100vw - 56px);
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-all;
+    line-break: anywhere;
+    text-wrap: wrap;
+  }
+
+  body.company-page .thinking-body h4 {
+    font-size: 23px;
+    line-height: 1.68;
+  }
+
+  body.company-page .heading-chunk,
+  body.company-page .text-chunk {
+    display: block;
+  }
+
+  body.company-page .thinking-values,
+  body.company-page .vision-grid,
+  body.company-page .policy-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  body.company-page .thinking-value-card,
+  body.company-page .vision-card,
+  body.company-page .policy-card {
+    align-items: flex-start;
+    padding: 0 0 28px;
+    border-right: 0;
+    border-bottom: 1px solid #dbe6ef;
+    text-align: left;
+  }
+
+  body.company-page .thinking-value-card:last-child,
+  body.company-page .vision-card:last-child,
+  body.company-page .policy-card:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  body.company-page .policy-card:nth-child(-n+2),
+  body.company-page .thinking-value-card:nth-child(-n+2),
+  body.company-page .vision-card:nth-child(-n+2) {
+    border-bottom: 1px solid #dbe6ef;
+  }
+
+  body.company-page .thinking-card-image {
+    width: calc(100vw - 56px);
+    max-width: calc(100vw - 56px);
+    height: 190px;
+    margin-bottom: 16px;
+  }
+
+  body.company-page .thinking-value-card h5,
+  body.company-page .vision-card h5,
+  body.company-page .policy-card h5 {
+    justify-content: flex-start;
+    min-height: 0;
+    margin-bottom: 8px;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  body.company-page .thinking-value-card p,
+  body.company-page .vision-card p,
+  body.company-page .policy-card p,
+  body.company-page .thinking-row-policy .policy-card p {
+    display: block;
+    width: calc(100vw - 56px);
+    max-width: calc(100vw - 56px);
+    min-height: 0;
+    margin: 0;
+    font-size: 13.5px;
+    line-height: 1.85;
+    text-align: left;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-all;
+    line-break: anywhere;
+  }
+
+  body.company-page .copy-chunk {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 680px) {
+  body.company-page .mobile-only {
+    display: inline;
+  }
+
+  body.company-page .pc-only {
+    display: none;
+  }
+
+  body.company-page .company-hero {
     min-height: 390px;
   }
 
-  .company-page .company-hero:before {
-    background: rgba(255,255,255,.72);
+  body.company-page .company-hero .copy {
+    padding: 34px 28px 46px;
   }
 
-  .company-page .company-hero .copy {
-    padding: 34px 22px 46px;
+  body.company-page .company-hero .copy > * {
+    width: calc(100vw - 56px);
+    max-width: 100%;
   }
 
-  .company-page .company-hero h1 {
+  body.company-page .company-hero:before {
+    background: rgba(255,255,255,.76);
+  }
+
+  body.company-page .company-hero h1 {
     font-size: 38px;
   }
 
-  .company-page .company-hero .en {
+  body.company-page .company-hero .en {
     margin-bottom: 22px;
     font-size: 16px;
   }
 
-  .company-page .company-hero .lead {
+  body.company-page .company-hero .lead {
     max-width: 100%;
     font-size: 14px;
     line-height: 1.9;
   }
 
-  .company-page .company-president-section {
+  body.company-page .company-president-section {
     padding-top: 52px;
     padding-bottom: 52px;
   }
 
-  .company-page .philosophy {
-    padding: 24px;
+  body.company-page .president .president-lead {
+    font-size: 21px;
+    line-height: 1.7;
   }
 
-  .company-page .timeline {
+  body.company-page .president .president-body {
+    font-size: 13.5px;
+    line-height: 1.95;
+  }
+
+  body.company-page .president .signature-block {
+    margin-top: 28px;
+  }
+
+  body.company-page .president .signature-title {
+    font-size: 12.5px;
+  }
+
+  body.company-page .president .signature {
+    font-size: 22px;
+  }
+
+  body.company-page .company-overview-section {
+    padding-bottom: 62px;
+  }
+
+  body.company-page .company-overview-section .inner {
+    width: min(calc(100% - 40px),100%);
+  }
+
+  body.company-page .company-overview-section .outline {
+    margin-bottom: 38px;
+  }
+
+  body.company-page .timeline {
     grid-template-columns: 1fr;
+    margin-top: 28px;
   }
 
-  .company-page .company-overview-section .inner, .company-page .company-thinking {
-    padding-left: 22px;
-    padding-right: 22px;
-  }
-
-  .company-page .company-thinking-section {
+  body.company-page .company-thinking-section {
     padding-top: 46px;
     padding-bottom: 60px;
   }
 
-  .company-page .company-thinking-heading {
-    font-size: 25px;
-    margin-bottom: 14px;
+  body.company-page .company-thinking {
+    padding-left: 28px;
+    padding-right: 28px;
   }
 
-  .company-page .company-thinking-heading+.thinking-row {
+  body.company-page .company-thinking-heading {
+    margin-bottom: 14px;
+    font-size: 25px;
+  }
+
+  body.company-page .company-thinking-heading + .thinking-row {
     padding-top: 34px;
   }
 
-  .company-page .thinking-number {
+  body.company-page .thinking-number {
     font-size: 48px;
-  }
-
-  .company-page .thinking-body h4 {
-    font-size: 24px;
-    line-height: 1.7;
-  }
-
-  .company-page .thinking-values, .company-page .vision-grid, .company-page .policy-grid {
-    grid-template-columns: 1fr;
-    gap: 26px;
-    margin-top: 30px;
-  }
-
-  .company-page .thinking-value-card, .company-page .vision-card, .company-page .policy-card {
-    padding: 0 12px 26px;
-    border-right: 0;
-    border-bottom: 1px solid #dbe6ef;
-  }
-
-  .company-page .thinking-value-card:last-child, .company-page .vision-card:last-child, .company-page .policy-card:last-child {
-    border-bottom: 0;
-  }
-
-  .company-page .thinking-card-image {
-    height: 180px;
-  }
-
-  .company-page .company-hero .lead, .company-page .president .president-lead, .company-page .president .president-body, .company-page .company-block .page-lead, .company-page .num-list li, .company-page .bubble {
-    max-width: 100%!important;
-    word-break: normal;
-    overflow-wrap: anywhere;
   }
 }

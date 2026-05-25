@@ -633,8 +633,6 @@
 
 .new-graduate-page .graduate-footer-nav {
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2,auto);
-  grid-auto-flow: column;
   gap: 12px 48px;
   align-self: center;
 }

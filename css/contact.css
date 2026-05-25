@@ -80,11 +80,19 @@
 
 .contact-page main > section > .section > .inner {
   width: min(calc(100% - (var(--page-shell-gutter) * 2)),var(--page-shell-wide));
-  max-width: none;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0;
   padding-right: 0;
+}
+/* お問い合わせ先テーブル下の注意書き */
+.contact-page table + p {
+  text-align: center;
+}
+/* お問い合わせ先テーブル：右列の文章位置調整 */
+.contact-page table td:nth-child(2) {
+  padding-left: 40px;
 }
 
 @media(max-width:1000px) {

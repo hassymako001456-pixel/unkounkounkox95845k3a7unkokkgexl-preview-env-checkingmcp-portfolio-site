@@ -207,11 +207,11 @@ body.service-page .service-head img {
 }
 
 body.service-page .service-card:first-child .service-head img {
-  object-position: center 42%;
+  object-position: center 10%;
 }
 
 body.service-page .service-card.green .service-head img {
-  object-position: center 54%;
+  object-position: center 20%;
 }
 
 body.service-page .service-body-copy {
@@ -329,7 +329,9 @@ body.service-page .service-value-photo, body.service-page .service-process-card 
 }
 
 body.service-page .service-value-card:nth-child(1) .service-value-photo {
-  object-position: center 50%;
+  height: 130px;
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 
 body.service-page .service-value-card:nth-child(2) .service-value-photo {
@@ -461,6 +463,8 @@ body.service-page .field-card p {
 body.service-page .service-copy-line {
   display: block;
 }
+
+
 
 @media (max-width:1180px) {
   body.service-page main > section > .section > .inner {
@@ -665,8 +669,8 @@ body.service-page .service-copy-line {
 
 
 body.service-page .service-value-card, body.service-page .service-process-card, body.service-page .service-strength-grid .value-item {
-  min-height: 326px;
-  padding: 14px 0 16px;
+  min-height: auto;
+  padding: 14px 0 0;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -761,5 +765,177 @@ body.service-page .service-strength-grid .value-item p {
 
   body.service-page .service-strength-grid .strength-photo {
     height: 140px;
+  }
+}
+
+@media (min-width:1181px) {
+  body.service-page .service-value-process-section {
+    padding-top: 48px;
+    padding-bottom: 50px;
+  }
+
+  body.service-page .service-value-process-section + .section.u-pt-0 {
+    padding-top: 28px !important;
+  }
+
+  body.service-page .service-value-process-section .service-section-lead {
+    margin-bottom: 20px;
+  }
+
+  body.service-page .service-value-block {
+    margin-top: 14px;
+  }
+
+  body.service-page .service-process-block {
+    margin-top: 36px;
+  }
+
+  body.service-page .service-value-grid,
+  body.service-page .service-process-grid,
+  body.service-page .service-strength-grid {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  body.service-page .service-value-card,
+  body.service-page .service-process-card,
+  body.service-page .service-strength-grid .value-item {
+    min-height: 0;
+    padding: 14px 0 12px;
+  }
+
+  body.service-page .service-value-card,
+  body.service-page .service-process-card {
+    padding-bottom: 10px;
+  }
+
+  body.service-page .service-value-card h4,
+  body.service-page .service-process-card h4,
+  body.service-page .service-strength-grid .value-item h3 {
+    min-height: 0;
+    margin: 0 0 14px;
+    padding: 0 18px;
+    font-size: 18px;
+    line-height: 1.42;
+  }
+
+  body.service-page .service-card-label,
+  body.service-page .service-process-card span,
+  body.service-page .service-strength-grid .service-card-label {
+    margin-bottom: 6px;
+    padding: 0 18px;
+  }
+
+  body.service-page .service-process-card > div {
+    display: block;
+    min-height: 0;
+    padding-bottom: 0;
+  }
+
+  body.service-page .service-value-photo,
+  body.service-page .service-process-card img,
+  body.service-page .service-strength-grid .strength-photo,
+  body.service-page .service-value-card:nth-child(1) .service-value-photo {
+    height: 136px;
+    margin: 0 0 14px;
+  }
+
+  body.service-page .service-value-card p,
+  body.service-page .service-process-card p,
+  body.service-page .service-strength-grid .value-item p {
+    width: auto;
+    max-width: none;
+    margin: 0;
+    padding: 0 18px;
+    font-size: 12.5px;
+    line-height: 1.78;
+    text-align: center;
+    text-wrap: balance;
+  }
+
+  body.service-page .service-value-card p,
+  body.service-page .service-process-card p {
+    min-height: 3.56em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  body.service-page .service-strength-grid .value-item p {
+    padding-bottom: 0;
+  }
+
+  body.service-page .service-value-card:nth-child(1) .service-value-photo {
+    object-position: center 48%;
+  }
+
+  body.service-page .service-value-card:nth-child(2) .service-value-photo {
+    object-position: center 50%;
+  }
+
+  body.service-page .service-value-card:nth-child(3) .service-value-photo {
+    object-position: center 46%;
+  }
+
+  body.service-page .service-value-card:nth-child(4) .service-value-photo {
+    object-position: center 52%;
+  }
+
+  body.service-page .service-process-card:nth-child(1) img {
+    object-position: center 48%;
+  }
+
+  body.service-page .service-process-card:nth-child(2) img {
+    object-position: center 44%;
+  }
+
+  body.service-page .service-process-card:nth-child(3) img {
+    object-position: center 50%;
+  }
+
+  body.service-page .service-process-card:nth-child(4) img {
+    object-position: center 46%;
+  }
+
+  body.service-page .service-strength-grid .value-item:nth-child(1) .strength-photo {
+    object-position: center 46%;
+  }
+
+  body.service-page .service-strength-grid .value-item:nth-child(2) .strength-photo {
+    object-position: center 44%;
+  }
+
+  body.service-page .service-strength-grid .value-item:nth-child(3) .strength-photo {
+    object-position: center 48%;
+  }
+
+  body.service-page .service-strength-grid .value-item:nth-child(4) .strength-photo {
+    object-position: center 45%;
+  }
+
+  body.service-page .field-grid {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  body.service-page .field-card {
+    min-height: 0;
+    padding: 0 12px 12px;
+  }
+
+  body.service-page .field-card img {
+    margin-bottom: 8px;
+  }
+
+  body.service-page .field-card h3 {
+    min-height: 0;
+    margin: 0 0 6px;
+    line-height: 1.4;
+  }
+
+  body.service-page .field-card p {
+    line-height: 1.72;
   }
 }
