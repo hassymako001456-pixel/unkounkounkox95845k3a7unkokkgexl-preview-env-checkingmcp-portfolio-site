@@ -1,4 +1,5 @@
 /* New graduate LP styles. Scoped to avoid affecting the existing site. */
+/* Shared recruitment header/footer styles now live in header.css and footer.css. */
 
 
 .new-graduate-page {
@@ -7,50 +8,6 @@
   overflow-x: hidden;
 }
 
-.new-graduate-page .site-header {
-  width: 100vw;
-  max-width: 100vw;
-  overflow: hidden;
-}
-
-.new-graduate-page .site-header .header-inner {
-  width: 100%;
-  max-width: none;
-  padding-right: 34px;
-  justify-content: space-between;
-}
-
-.new-graduate-page .site-header .brand {
-  min-width: 0!important;
-  flex: 0 1 auto;
-}
-
-.graduate-header-entry {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 136px;
-  min-height: 46px;
-  padding: 0 28px;
-  background: var(--navy);
-  color: #fff;
-  border: 1px solid rgba(255,255,255,.12);
-  border-radius: 4px;
-  box-shadow: 0 8px 18px rgba(8,44,85,.16);
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: .06em;
-  flex: 0 0 auto;
-}
-
-.graduate-header-entry:hover {
-  background: #05284f;
-}
-
-.graduate-mobile-entry {
-  display: none;
-}
 
 .new-graduate-page main > .section, .new-graduate-page main > section.section {
   padding-top: 72px;
@@ -631,15 +588,6 @@
   font-size: 14px;
 }
 
-.new-graduate-page .graduate-footer-nav {
-  grid-template-columns: 1fr 1fr;
-  gap: 12px 48px;
-  align-self: center;
-}
-
-.new-graduate-page .graduate-footer-nav a {
-  white-space: nowrap;
-}
 
 .mid-career-page .graduate-hero-bg {
   object-position: 0% 0%;
@@ -693,252 +641,9 @@
 }
 
 
-@media(max-width:1100px) {
-  .new-graduate-page .site-header .header-inner {
-    padding-right: 28px;
-  }
-
-  .graduate-hero {
-    min-height: 630px;
-  }
-
-  .graduate-work-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .graduate-work-card {
-    grid-template-columns: 230px minmax(0,1fr);
-    min-height: 180px;
-  }
-
-  .graduate-career,.graduate-stats,.graduate-flow {
-    grid-template-columns: repeat(2,minmax(0,1fr));
-  }
-
-  .graduate-career:before,.graduate-career article:after,.graduate-flow article:after {
-    display: none;
-  }
-
-  .graduate-career {
-    gap: 28px;
-  }
-
-  .graduate-flow {
-    gap: 22px;
-  }
-
-  .graduate-stats div:nth-child(2n) {
-    border-right: 0;
-  }
-
-  .graduate-stats div:nth-child(-n+3) {
-    border-bottom: 1px solid #d8e5ef;
-  }
-}
 
 
-@media(max-width:760px) {
-  .new-graduate-page .site-header .header-inner {
-    padding-right: 16px;
-  }
 
-  .graduate-header-entry {
-    display: none;
-  }
-
-  .graduate-mobile-entry {
-    position: fixed;
-    top: 12px;
-    right: 16px;
-    z-index: 70;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 96px;
-    min-height: 42px;
-    padding: 0 18px;
-    background: var(--navy);
-    color: #fff;
-    border-radius: 4px;
-    box-shadow: 0 8px 18px rgba(8,44,85,.16);
-    font-size: 14px;
-    font-weight: 800;
-    line-height: 1;
-    letter-spacing: .06em;
-  }
-
-  .new-graduate-page .site-header .brand {
-    max-width: calc(100vw - 132px);
-    overflow: hidden;
-  }
-
-  .graduate-hero {
-    min-height: 560px;
-    align-items: flex-end;
-  }
-
-  .new-graduate-page main > .section, .new-graduate-page main > section.section {
-    padding-top: 56px;
-    padding-bottom: 60px;
-  }
-
-  .new-graduate-page .section-title {
-    margin-bottom: 28px;
-    font-size: 26px;
-  }
-
-  .graduate-hero-bg {
-    object-position: 60% center;
-  }
-
-  .graduate-hero:before {
-    background: linear-gradient(
-      0deg,
-      rgba(255,255,255,.96) 0%,
-      rgba(255,255,255,.82) 52%,
-      rgba(255,255,255,.26) 100%
-    );
-  }
-
-  .graduate-hero-inner {
-    padding: 130px 24px 68px;
-  }
-
-  .graduate-hero h1 {
-    font-size: 39px;
-  }
-
-  .graduate-hero-lead {
-    font-size: 13.5px;
-    line-height: 1.9;
-  }
-
-  .new-graduate-page main > section.graduate-message {
-    padding-top: 34px;
-    padding-bottom: 44px;
-  }
-
-  .graduate-message-grid {
-    grid-template-columns: 1fr;
-    gap: 26px;
-  }
-
-  .graduate-message-visual {
-    clip-path: none;
-  }
-
-  .graduate-message-visual img {
-    height: 190px;
-  }
-
-  .graduate-message-body {
-    padding: 0;
-  }
-
-  .graduate-message-body h2 {
-    font-size: 25px;
-    line-height: 1.55;
-  }
-
-  .graduate-work-card {
-    grid-template-columns: 1fr;
-    min-height: 0;
-  }
-
-  .graduate-work-card img {
-    height: 210px;
-  }
-
-  .graduate-career,.graduate-stats,.graduate-flow {
-    grid-template-columns: 1fr;
-  }
-
-  .graduate-career article {
-    text-align: left;
-    padding: 0 0 28px;
-    border-bottom: 1px solid #d9e5ef;
-  }
-
-  .graduate-career span {
-    margin: 0 0 14px;
-  }
-
-  .graduate-stats div {
-    border-right: 0;
-    border-bottom: 1px solid #d8e5ef;
-  }
-
-  .graduate-stats div:last-child {
-    border-bottom: 0;
-  }
-
-  .graduate-outline,.graduate-outline tbody,.graduate-outline tr,.graduate-outline th,.graduate-outline td {
-    display: block;
-    width: 100%;
-  }
-
-  .graduate-outline th {
-    border-bottom: 0;
-  }
-
-  .graduate-outline td {
-    border-top: 0;
-  }
-
-  .graduate-final-cta {
-    min-height: auto;
-  }
-
-  .graduate-final-cta-inner {
-    min-height: auto;
-    padding: 44px 24px 46px;
-  }
-
-  .graduate-final-cta h2 {
-    font-size: 24px;
-    line-height: 1.6;
-    margin-bottom: 14px;
-  }
-
-  .graduate-final-cta p {
-    margin-bottom: 22px;
-  }
-
-  .graduate-entry-button {
-    width: min(100%,320px);
-    min-width: 0;
-    padding: 14px 24px;
-    font-size: 14px;
-  }
-
-  .mid-career-page .graduate-final-cta h2 {
-    white-space: normal;
-    font-size: 24px;
-  }
-
-  .new-graduate-page .graduate-footer-nav {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 24px;
-  }
-
-  .new-graduate-page:not(.mid-career-page) .graduate-hero-bg {
-    object-position: 68% center;
-    transform: none;
-  }
-
-  .mid-career-page .graduate-hero-bg {
-    object-position: 64% center;
-    transform: none;
-  }
-}
-
-
-@media(max-width:520px) {
-  .graduate-mobile-entry {
-    right: auto;
-    left: min(calc(100vw - 112px),278px);
-  }
-}
 
 
 .graduate-final-cta:before {
@@ -948,23 +653,6 @@
 .graduate-final-cta-inner {
   z-index: 2;
 }
-
-@media (max-width: 768px) {
-  .new-graduate-page .site-header .header-inner {
-    min-height: 74px;
-    padding-right: 14px;
-  }
-
-  .new-graduate-page .site-header .brand {
-    max-width: calc(100vw - 128px);
-  }
-
-  .graduate-mobile-entry {
-    min-width: 92px;
-    min-height: 40px;
-    padding: 0 16px;
-    font-size: 13px;
-  }
 
   .graduate-hero {
     min-height: 510px;

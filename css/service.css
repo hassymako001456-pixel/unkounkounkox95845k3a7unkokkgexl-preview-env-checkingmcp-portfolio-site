@@ -902,6 +902,40 @@ body.service-page .service-value-card p, body.service-page .service-process-card
   overflow-wrap: normal;
 }
 
+/* Keep the provided-value cards aligned without touching process or strength cards. */
+body.service-page .service-value-block .service-value-card {
+  display: grid;
+  grid-template-rows: auto minmax(2.8em,auto) 140px minmax(3.4em,auto);
+  row-gap: 0;
+  min-height: 0;
+  padding: 14px 0 12px;
+}
+
+body.service-page .service-value-block .service-card-label {
+  margin: 0 0 8px;
+}
+
+body.service-page .service-value-block .service-value-card h4 {
+  min-height: 0;
+  margin: 0 0 12px;
+}
+
+body.service-page .service-value-block .service-value-photo,
+body.service-page .service-value-block .service-value-card:nth-child(1) .service-value-photo {
+  align-self: start;
+  height: 140px;
+  margin: 0 0 12px;
+}
+
+body.service-page .service-value-block .service-value-card p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.4em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 body.service-page .service-strength-grid .value-item p {
   padding-bottom: 2px;
 }
@@ -1044,6 +1078,12 @@ body.service-page .service-strength-grid .value-item p {
     border-bottom: 0;
   }
 
+  body.service-page .service-value-block .service-value-card {
+    display: flex;
+    min-height: 0;
+    padding: 14px 0 16px;
+  }
+
   body.service-page .service-card-label,
   body.service-page .service-process-card span,
   body.service-page .service-strength-grid .service-card-label {
@@ -1059,6 +1099,10 @@ body.service-page .service-strength-grid .value-item p {
     padding: 0 16px;
     font-size: 19px;
     line-height: 1.42;
+  }
+
+  body.service-page .service-value-block .service-value-card h4 {
+    margin-bottom: 10px;
   }
 
   body.service-page .service-value-photo,
@@ -1080,6 +1124,11 @@ body.service-page .service-strength-grid .value-item p {
     line-height: 1.8;
     text-align: center;
     text-wrap: pretty;
+  }
+
+  body.service-page .service-value-block .service-value-card p {
+    display: block;
+    min-height: 0;
   }
 
   body.service-page .field-grid {

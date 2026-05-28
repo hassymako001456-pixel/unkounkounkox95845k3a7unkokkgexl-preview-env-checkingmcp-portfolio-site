@@ -1,5 +1,4 @@
-/* footer.css - migrated from inline CSS. Keep visual parity first. */
-
+/* Footer Base */
 
 .footer-main {
   padding: 34px 0 14px;
@@ -38,6 +37,18 @@ body .footer-grid {
   gap: 6px 40px;
   font-size: 13px;
   font-weight: 800;
+}
+
+/* Recruitment Footer Variant */
+
+.new-graduate-page .graduate-footer-nav {
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 48px;
+  align-self: center;
+}
+
+.new-graduate-page .graduate-footer-nav a {
+  white-space: nowrap;
 }
 
 body .footer-contact {
@@ -185,6 +196,8 @@ body .footer-contact-external::after {
   }
 }
 
+/* Footer Mobile */
+
 @media(max-width:768px) {
   .footer-main {
     padding: 28px 0 14px;
@@ -265,6 +278,13 @@ body .footer-contact-external::after {
     margin-top: 8px;
     padding: 0 20px;
     line-height: 1.6;
+  }
+}
+
+@media(max-width:760px) {
+  .new-graduate-page .graduate-footer-nav {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 24px;
   }
 }
 
